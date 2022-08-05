@@ -16,12 +16,7 @@
           "PageTitle": "Creating a new clickwrap",
           "ResultsPageHeader": "Create a clickwrap",
           "ResultsPageText": "The clickwrap {0} has been created!"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 2,
           "ExampleName": "Activate a clickwrap",
@@ -35,12 +30,7 @@
           "PageTitle": "Activating a clickwrap",
           "ResultsPageHeader": "Activate a clickwrap",
           "ResultsPageText": "The clickwrap has been activated!"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 3,
           "ExampleName": "Create a new clickwrap version",
@@ -54,12 +44,7 @@
           "PageTitle": "Creating a new clickwrap version",
           "ResultsPageHeader": "Create a new clickwrap version",
           "ResultsPageText": "Version {0} of clickwrap \"{1}\" has been created."
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 4,
           "ExampleName": "Get a list of clickwraps",
@@ -73,12 +58,7 @@
           "PageTitle": "Getting a list of clickwraps",
           "ResultsPageHeader": "Get a list of clickwraps",
           "ResultsPageText": "Results from the ClickWraps::getClickwraps method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 5,
           "ExampleName": "Get clickwrap responses",
