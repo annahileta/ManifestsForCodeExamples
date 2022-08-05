@@ -1,0 +1,99 @@
+{
+  "Groups": [
+    {
+      "Name": "",
+      "Examples": [
+        {
+          "ExampleNumber": 1,
+          "ExampleName": "Create a clickwrap",
+          "ExampleDescription": "Creates a clickwrap that you can embed in your website or app.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createclickwrap/",
+              "PathName": "ClickWraps::createClickwrap"
+            }
+          ],
+          "PageTitle": "Creating a new clickwrap",
+          "ResultsPageHeader": "Create a clickwrap",
+          "ResultsPageText": "The clickwrap {0} has been created!"
+        }
+      ]
+    },
+    {
+      "Name": "",
+      "Examples": [
+        {
+          "ExampleNumber": 2,
+          "ExampleName": "Activate a clickwrap",
+          "ExampleDescription": "Activates a new clickwrap that you have already created. By default, new clickwraps are inactive. You must activate your clickwrap before you can use it.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/updateclickwrapversion",
+              "PathName": "ClickWraps::updateClickwrapVersion"
+            }
+          ],
+          "PageTitle": "Activating a clickwrap",
+          "ResultsPageHeader": "Activate a clickwrap",
+          "ResultsPageText": "The clickwrap has been activated!"
+        }
+      ]
+    },
+    {
+      "Name": "",
+      "Examples": [
+        {
+          "ExampleNumber": 3,
+          "ExampleName": "Create a new clickwrap version",
+          "ExampleDescription": "Creates a new version of a clickwrap. <p>You can specify whether you require users who have previously accepted the clickwrap to accept the new version when they return to your website.</p>",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createclickwrapversion/",
+              "PathName": "ClickWraps::createClickwrapVersion"
+            }
+          ],
+          "PageTitle": "Creating a new clickwrap version",
+          "ResultsPageHeader": "Create a new clickwrap version",
+          "ResultsPageText": "Version {0} of clickwrap \"{1}\" has been created."
+        }
+      ]
+    },
+    {
+      "Name": "",
+      "Examples": [
+        {
+          "ExampleNumber": 4,
+          "ExampleName": "Get a list of clickwraps",
+          "ExampleDescription": "Gets a list of clickwraps associated with a specific DocuSign user.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/getclickwraps",
+              "PathName": "ClickWraps::getClickwraps"
+            }
+          ],
+          "PageTitle": "Getting a list of clickwraps",
+          "ResultsPageHeader": "Get a list of clickwraps",
+          "ResultsPageText": "Results from the ClickWraps::getClickwraps method:"
+        }
+      ]
+    },
+    {
+      "Name": "",
+      "Examples": [
+        {
+          "ExampleNumber": 5,
+          "ExampleName": "Get clickwrap responses",
+          "ExampleDescription": "Gets user responses to your clickwrap agreements.",
+          "LinksToAPIMethod": [
+            {
+              "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/getclickwrapagreements",
+              "PathName": "ClickWraps::getClickwrapAgreements"
+            }
+          ],
+          "PageTitle": "Getting clickwrap responses",
+          "ResultsPageHeader": "Get clickwrap responses",
+          "ResultsPageText": "Results from the ClickWraps::getClickwrapAgreements method:"
+        }
+      ]
+    }
+  ]
+}
