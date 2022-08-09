@@ -1,7 +1,7 @@
 {
   "Groups": [
     {
-      "Name": "",
+      "Name": "Rooms examples",
       "Examples": [
         {
           "ExampleNumber": 1,
@@ -20,12 +20,7 @@
           "PageTitle": "Creating a room with data",
           "ResultsPageHeader": "Creating a room with data",
           "ResultsPageText": "The room \"{0}\" has been created!<br/> Room ID: {1}."
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 2,
           "ExampleName": "Creating a room with a template",
@@ -47,12 +42,7 @@
           "PageTitle": "Creating a room with a template",
           "ResultsPageHeader": "Creating a room with a template",
           "ResultsPageText": "The room \"{0}\" has been created!<br/> Room ID: {1}."
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 3,
           "ExampleName": "Exporting data from a room",
@@ -70,12 +60,7 @@
           "PageTitle": "Exporting data from a room",
           "ResultsPageHeader": "Field data associated with a room",
           "ResultsPageText": "Results from the Rooms::GetRoomFieldData method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 4,
           "ExampleName": "Adding forms to a room",
@@ -101,12 +86,7 @@
           "PageTitle": "Adding forms to a room",
           "ResultsPageHeader": "The DocuSign form was successfully added to the room",
           "ResultsPageText": "Results from the Rooms::AddFormToRoom method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 5,
           "ExampleName": "Getting rooms with filters",
@@ -120,12 +100,7 @@
           "PageTitle": "Getting rooms with filters",
           "ResultsPageHeader": "Rooms that have had their field data, updated within the time period between {0} and {1}",
           "ResultsPageText": "Results from the Rooms::GetRooms method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 6,
           "ExampleName": "Creating an external form fill session",
@@ -147,12 +122,7 @@
           "PageTitle": "Create an external form fill session",
           "ResultsPageHeader": "URL for a new external form fill session",
           "ResultsPageText": "Results from the Forms::CreateExternalFormFillSession:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 7,
           "ExampleName": "Creating a form group",
@@ -166,12 +136,7 @@
           "PageTitle": "Creating a form group",
           "ResultsPageHeader": "Creating a form group",
           "ResultsPageText": "The Form Group \"{0}\" has been created!<br/> Room ID: {1}."
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 8,
           "ExampleName": "Grant office access to a form group",
@@ -193,12 +158,7 @@
           "PageTitle": "Assign office to a form group",
           "ResultsPageHeader": "Assign office to a form group",
           "ResultsPageText": "Office \"{0}\" has been assigned to Form Group \"{1}\""
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 9,
           "ExampleName": "Assign a form to a form group",

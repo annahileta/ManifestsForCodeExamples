@@ -1,7 +1,7 @@
 {
   "Groups": [
     {
-      "Name": "",
+      "Name": "Admin examples",
       "Examples": [
         {
           "ExampleNumber": 1,
@@ -24,12 +24,7 @@
           "PageTitle": "Create a new active eSignature user",
           "ResultsPageHeader": "Create a new active eSignature user",
           "ResultsPageText": "Results from eSignUserManagement:createUser method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 2,
           "ExampleName": "Create a new active user for CLM and eSignature",
@@ -51,12 +46,7 @@
           "PageTitle": "Create an active CLM + eSign user",
           "ResultsPageHeader": "Create a new active user for CLM and eSignature",
           "ResultsPageText": "Results from MultiProductUserManagement:addOrUpdateUser method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 3,
           "ExampleName": "Bulk export user data",
@@ -74,12 +64,7 @@
           "PageTitle": "Bulk export user data",
           "ResultsPageHeader": "Bulk export user data",
           "ResultsPageText": "User data exported to {0}. </br> Results from UserExport:getUserListExport:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 4,
           "ExampleName": "Add users via bulk import",
@@ -104,12 +89,7 @@
               "ResultsPageText": "Results from UserImport:addBulkUserImport method:"
             }
           ]
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 5,
           "ExampleName": "Audit users",
@@ -127,12 +107,7 @@
           "PageTitle": "Audit users",
           "ResultsPageHeader": "Audit users",
           "ResultsPageText": "Results from eSignUserManagement:getUserProfiles method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 6,
           "ExampleName": "Retrieve the user's DocuSign profile using an email address",
@@ -146,12 +121,7 @@
           "PageTitle": "Get user profile data by email",
           "ResultsPageHeader": "Retrieve the user's DocuSign profile using an email address",
           "ResultsPageText": "Results from MultiProductUserManagement:getUserDSProfilesByEmail method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 7,
           "ExampleName": "Retrieve the user's DocuSign profile using a User ID",
@@ -165,12 +135,7 @@
           "PageTitle": "Get user profile data by User ID",
           "ResultsPageHeader": "Retrieve the user's DocuSign profile using a User ID",
           "ResultsPageText": "Results from MultiProductUserManagement:getUserDSProfile method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 8,
           "ExampleName": "Update user product permission profiles using an email address",
@@ -188,12 +153,7 @@
           "PageTitle": "Update user product permission profiles using an email address",
           "ResultsPageHeader": "Update user product permission profiles using an email address",
           "ResultsPageText": "Results from MultiProductUserManagement:addUserProductPermissionProfilesByEmail method:"
-        }
-      ]
-    },
-    {
-      "Name": "",
-      "Examples": [
+        },
         {
           "ExampleNumber": 9,
           "ExampleName": "Delete user product permission profiles using an email address",
