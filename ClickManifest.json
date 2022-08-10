@@ -7,6 +7,7 @@
           "ExampleNumber": 1,
           "ExampleName": "Create a clickwrap",
           "ExampleDescription": "Creates a clickwrap that you can embed in your website or app.",
+          "ExampleDescriptionExtended": "<p>Creates a clickwrap that you can embed in your website or app.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createclickwrap/",
@@ -20,7 +21,8 @@
         {
           "ExampleNumber": 2,
           "ExampleName": "Activate a clickwrap",
-          "ExampleDescription": "Activates a new clickwrap that you have already created. By default, new clickwraps are inactive. You must activate your clickwrap before you can use it.",
+          "ExampleDescription": "Activates a new clickwrap that you have already created.",
+          "ExampleDescriptionExtended": "<p>Activates a new clickwrap that you have already created. By default, new clickwraps are inactive. You must activate your clickwrap before you can use it.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/updateclickwrapversion",
@@ -34,7 +36,8 @@
         {
           "ExampleNumber": 3,
           "ExampleName": "Create a new clickwrap version",
-          "ExampleDescription": "Creates a new version of a clickwrap. <p>You can specify whether you require users who have previously accepted the clickwrap to accept the new version when they return to your website.</p>",
+          "ExampleDescription": "Creates a new version of a clickwrap.",
+          "ExampleDescriptionExtended": "<p>Creates a new version of a clickwrap.</p><p>You can specify whether you require users who have previously accepted the clickwrap to accept the new version when they return to your website.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createclickwrapversion/",
@@ -49,6 +52,7 @@
           "ExampleNumber": 4,
           "ExampleName": "Get a list of clickwraps",
           "ExampleDescription": "Gets a list of clickwraps associated with a specific DocuSign user.",
+          "ExampleDescriptionExtended": "<p>Gets a list of clickwraps associated with a specific DocuSign user.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/getclickwraps",
@@ -63,6 +67,7 @@
           "ExampleNumber": 5,
           "ExampleName": "Get clickwrap responses",
           "ExampleDescription": "Gets user responses to your clickwrap agreements.",
+          "ExampleDescriptionExtended": "<p>Gets user responses to your clickwrap agreements.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/getclickwrapagreements",

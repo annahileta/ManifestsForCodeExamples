@@ -7,6 +7,7 @@
           "ExampleNumber": 1,
           "ExampleName": "Create a new active eSignature user",
           "ExampleDescription": "Demonstrates how to create a new eSignature user and activate their account automatically.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to create a new eSignature user and activate their account automatically.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/accounts/accountpermissionprofiles/list",
@@ -29,6 +30,7 @@
           "ExampleNumber": 2,
           "ExampleName": "Create a new active user for CLM and eSignature",
           "ExampleDescription": "Demonstrates how to create a new DocuSign user (valid for both CLM and eSignature APIs) and activate their account automatically.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to create a new DocuSign user (valid for both CLM and eSignature APIs) and activate their account automatically.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getproductpermissionprofiles",
@@ -50,7 +52,8 @@
         {
           "ExampleNumber": 3,
           "ExampleName": "Bulk export user data",
-          "ExampleDescription": "Demonstrates how to bulk-export user accounts within an organization into a CSV (comma separated value) file.",
+          "ExampleDescription": "Demonstrates how to bulk export user accounts within an organization into a CSV (comma-separated value) file.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to bulk export user accounts within an organization into a CSV (comma-separated value) file.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/bulkoperations/userexport/createuserlistexport",
@@ -68,7 +71,8 @@
         {
           "ExampleNumber": 4,
           "ExampleName": "Add users via bulk import",
-          "ExampleDescription": "Demonstrates how to bulk-import users and add user data from an example CSV (comma-separated value) file into a DocuSign Admin organization.",
+          "ExampleDescription": "Demonstrates how to audit the users in your account by retrieving the profiles of users that were modified after a specified date.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to bulk import users and add user data from an example CSV (comma-separated value) file into a DocuSign Admin organization.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/bulkoperations/userimport/addbulkuserimport",
@@ -94,6 +98,7 @@
           "ExampleNumber": 5,
           "ExampleName": "Audit users",
           "ExampleDescription": "Demonstrates how to audit the users in your account by retrieving the profiles of users that were modified after a specified date.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to audit the users in your account by retrieving the profiles of users that were modified after a specified date.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/users/getusers",
@@ -112,6 +117,7 @@
           "ExampleNumber": 6,
           "ExampleName": "Retrieve the user's DocuSign profile using an email address",
           "ExampleDescription": "Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s email address.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s email address.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
@@ -126,6 +132,7 @@
           "ExampleNumber": 7,
           "ExampleName": "Retrieve the user's DocuSign profile using a User ID",
           "ExampleDescription": "Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s User ID.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s User ID</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
@@ -140,6 +147,7 @@
           "ExampleNumber": 8,
           "ExampleName": "Update user product permission profiles using an email address",
           "ExampleDescription": "Demonstrates how to update user product permission profiles. There may only be one permission profile assigned to a user per product.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to update user product permission profiles. There may only be one permission profile assigned to a user per product.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getproductpermissionprofiles",
@@ -158,6 +166,7 @@
           "ExampleNumber": 9,
           "ExampleName": "Delete user product permission profiles using an email address",
           "ExampleDescription": "Demonstrates how to list and delete DocuSign Admin user product permission profiles.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to list and delete DocuSign Admin user product permission profiles.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getuserproductpermissionprofilesbyemail",

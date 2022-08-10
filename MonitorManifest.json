@@ -7,6 +7,7 @@
           "ExampleNumber": 1,
           "ExampleName": "Get monitoring data",
           "ExampleDescription": "Demonstrates how to get and display all of your organization’s monitoring data.",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to get and display all of your organization’s monitoring data.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/monitor-api/reference/monitor/dataset/getstream/",
@@ -20,7 +21,8 @@
         {
           "ExampleNumber": 2,
           "ExampleName": "Query monitoring data with filters",
-          "ExampleDescription": "Demonstrates how to query an organization's data based on specified filters and aggregations.",
+          "ExampleDescription": "<p>Demonstrates how to query an organization's data based on specified filters and aggregations.</p>",
+          "ExampleDescriptionExtended": "",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/monitor-api/reference/monitor/dataset/postwebquery/",
