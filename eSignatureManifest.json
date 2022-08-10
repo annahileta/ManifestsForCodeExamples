@@ -37,7 +37,7 @@
                     ],
                     "PageTitle": "Signing request by email",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 3,
@@ -131,7 +131,7 @@
                     ],
                     "PageTitle": "Create a template",
                     "ResultsPageHeader": "",
-                    "ResultsPageText": ""
+                    "ResultsPageText": "<br/>Template name: {0}, ID {1}."
                 },
                 {
                     "ExampleNumber": 9,
@@ -146,7 +146,7 @@
                     ],
                     "PageTitle": "Envelope sent",
                     "ResultsPageHeader": "",
-                    "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 10,
@@ -161,7 +161,7 @@
                     ],
                     "PageTitle": "Send envelope with multipart mime",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 11,
@@ -180,7 +180,7 @@
                     ],
                     "PageTitle": "Signing request by email",
                     "ResultsPageHeader": "",
-                    "ResultsPageText": ""
+                    "ResultsPageText": "Sender view URL: {0}"
                 },
                 {
                     "ExampleNumber": 12,
@@ -195,7 +195,7 @@
                     ],
                     "PageTitle": "Embedded DocuSign web tool",
                     "ResultsPageHeader": "",
-                    "ResultsPageText": ""
+                    "ResultsPageText": "NDSE view URL: {0}."
                 },
                 {
                     "ExampleNumber": 13,
@@ -258,7 +258,7 @@
                     ],
                     "PageTitle": "Envelope sent",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
                 }
             ]
         },
@@ -345,7 +345,7 @@
                     ],
                     "PageTitle": "Access Code Authentication",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 20,
@@ -360,7 +360,7 @@
                     ],
                     "PageTitle": "Phone Authenticatication",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 22,
@@ -375,7 +375,7 @@
                     ],
                     "PageTitle": "Knowledge Based Authentication",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 23,
@@ -390,7 +390,7 @@
                     ],
                     "PageTitle": "ID Verification Authentication",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 }
             ]
         },
@@ -411,7 +411,7 @@
                     ],
                     "PageTitle": "Creates a new permission profile",
                     "ResultsPageHeader": "The permission profile was updated",
-                    "ResultsPageText": "The permission profile was created!<br />Permission profile ID: {PermissionProfileId}, name: {PermissionProfileName}."
+                    "ResultsPageText": "The permission profile was created!<br />Permission profile ID: {0}, name:{1}."
                 },
                 {
                     "ExampleNumber": 25,
@@ -440,8 +440,8 @@
                         }
                     ],
                     "PageTitle": "Change single permission setting",
-                    "ResultsPageHeader": "The permission profile was updated!<br />Permission profile ID: ",
-                    "ResultsPageText": ""
+                    "ResultsPageHeader": "The permission profile was updated!",
+                    "ResultsPageText": "The permission profile was updated!<br />Permission profile ID: {0}."
                 },
                 {
                     "ExampleNumber": 27,
@@ -477,7 +477,7 @@
                     ],
                     "PageTitle": "Create a new brand",
                     "ResultsPageHeader": "New brand created",
-                    "ResultsPageText": "The brand has been created!<br />Brand ID: "
+                    "ResultsPageText": "The brand has been created!<br />Brand ID: {0}."
                 },
                 {
                     "ExampleNumber": 29,
@@ -492,7 +492,7 @@
                     ],
                     "PageTitle": "Apply a brand to an envelope",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 30,
@@ -507,7 +507,7 @@
                     ],
                     "PageTitle": "Apply a brand to template",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 }
             ]
         },
@@ -595,7 +595,7 @@
                     ],
                     "PageTitle": "Use conditional recipients.",
                     "ResultsPageHeader": "Use conditional recipients",
-                    "ResultsPageText": "Envelope ID {envelopeId} with conditional routing criteria has been created and sent to the first recipient!"
+                    "ResultsPageText": "Envelope ID {0} with conditional routing criteria has been created and sent to the first recipient!"
                 },
                 {
                     "ExampleNumber": 35,
@@ -610,7 +610,7 @@
                     ],
                     "PageTitle": "Schedule an Envelope",
                     "ResultsPageHeader": "Envelope scheduled",
-                    "ResultsPageText": "The envelope has been created and scheduled!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and scheduled!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 36,
@@ -625,7 +625,7 @@
                     ],
                     "PageTitle": "Send an envelope with delayed routing",
                     "ResultsPageHeader": "Envelope sent",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 }
             ]
         },
@@ -646,7 +646,7 @@
                     ],
                     "PageTitle": "Request a signature by SMS delivery",
                     "ResultsPageHeader": "Request a signature by SMS delivery",
-                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID "
+                    "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 38,
