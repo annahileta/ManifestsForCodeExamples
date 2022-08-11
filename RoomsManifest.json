@@ -142,7 +142,7 @@
           ],
           "PageTitle": "Creating a form group",
           "ResultsPageHeader": "Creating a form group",
-          "ResultsPageText": "The Form Group \"{0}\" has been created!<br/> Room ID: {1}."
+          "ResultsPageText": "The Form Group \"{0}\" has been created!"
         },
         {
           "ExampleNumber": 8,
