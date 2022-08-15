@@ -1,0 +1,195 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "Manifest schema",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "Groups"
+    ],
+    "properties": {
+        "Groups": {
+            "type": "array",
+            "default": [],
+            "title": "The list of the code example groups.",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A code example group.",
+                "required": [
+                    "Name",
+                    "Examples"
+                ],
+                "properties": {
+                    "Name": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The name of the code example group.",
+                        "examples": [
+                            "Basic examples"
+                        ]
+                    },
+                    "Examples": {
+                        "type": "array",
+                        "default": [],
+                        "title": "List of the code examples in this group.",
+                        "items": {
+                            "type": "object",
+                            "default": {},
+                            "title": "A code example.",
+                            "required": [
+                                "ExampleNumber",
+                                "ExampleName",
+                                "ExampleDescription",
+                                "ExampleDescriptionExtended",
+                                "LinksToAPIMethod",
+                                "PageTitle",
+                                "ResultsPageHeader",
+                                "ResultsPageText"
+                            ],
+                            "properties": {
+                                "ExampleNumber": {
+                                    "type": "integer",
+                                    "default": 0,
+                                    "title": "The number of current code example (should align with the number used in it's link).",
+                                    "examples": [
+                                        1
+                                    ]
+                                },
+                                "ExampleName": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "Name for the code example used for the homepage and as a header in the code examples page.",
+                                    "examples": [
+                                        "Request a signature through your app (embedded signing)"
+                                    ]
+                                },
+                                "ExampleDescription": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "Longer information about the code example that is displayed on the homepage.",
+                                    "examples": [
+                                        "Sends an envelope, then uses embedded signing for the first signer. With embedded signing, DocuSign signing is initiated from your website."
+                                    ]
+                                },
+                                "ExampleDescriptionExtended": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "Longer information about the code example that is displayed on the code example's page.",
+                                    "examples": [
+                                        "<p>This example sends an envelope and then uses embedded signing for the first signer. With embedded signing, the DocuSign signing experience is initiated from your website.</p>",
+                                    ]
+                                },
+                                "LinksToAPIMethod": {
+                                    "type": "array",
+                                    "default": [],
+                                    "title": "The LinksToAPIMethod Schema",
+                                    "items": {
+                                        "type": "object",
+                                        "title": "The link and link text for the API methods on the DocuSign developer portal.",
+                                        "required": [
+                                            "Path",
+                                            "PathName"
+                                        ],
+                                        "properties": {
+                                            "Path": {
+                                                "type": "string",
+                                                "title": "The path to the method.",
+                                                "examples": [
+                                                    "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/"
+                                                ]
+                                            },
+                                            "PathName": {
+                                                "type": "string",
+                                                "title": "The name of the method.",
+                                                "examples": [
+                                                    "Envelopes:create"
+                                                ]
+                                            }
+                                        },
+                                        "examples": [{
+                                            "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                                            "PathName": "Envelopes:create"
+                                        }]
+                                    }
+                                },
+                                "PageTitle": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The page title for the code example.",
+                                    "examples": [
+                                        "Embedded Signing Ceremony"
+                                    ]
+                                },
+                                "ResultsPageHeader": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The header for the result's page.",
+                                    "examples": [
+                                        "Envelope sent"
+                                    ]
+                                },
+                                "ResultsPageText": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The text on the result's page (all placeholders should have a format as in C# (for example, {0}, {1})).",
+                                    "examples": [
+                                        "The envelope has been created and sent!<br />Envelope ID {0}."
+                                    ]
+                                },
+                                "AdditionalPage": {
+                                    "type": "array",
+                                    "default": [],
+                                    "title": "The list of additional pages connected to this code example.",
+                                    "items": {
+                                        "type": "object",
+                                        "default": {},
+                                        "title": "An additional pags connected to this code example.",
+                                        "required": [
+                                            "Name",
+                                            "ResultsPageHeader",
+                                            "ResultsPageText"
+                                        ],
+                                        "properties": {
+                                            "Name": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "Name of the additional code example.",
+                                                "examples": [
+                                                    "file_state_success"
+                                                ]
+                                            },
+                                            "ResultsPageHeader": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "The header for the result of the additional page.",
+                                                "examples": [
+                                                    "Add users via bulk import"
+                                                ]
+                                            },
+                                            "ResultsPageText": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "The text for the result of the additional page (all placeholders should have a format as in C# (for example, {0}, {1})).",
+                                                "examples": [
+                                                    "Results from UserImport:addBulkUserImport method:"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "SkipForLanguages": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The languages that do not have the code example pushed to the public repository or where it is not supported. The languages should be written in one line, separated by semicolumn.",
+                                    "examples": [
+                                        "c#;php;ruby"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
