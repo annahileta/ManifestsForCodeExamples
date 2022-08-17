@@ -17,7 +17,6 @@
           "PageTitle": "Get monitoring data",
           "ResultsPageHeader": "Get monitoring data",
           "ResultsPageText": "Results from DataSet:getStream method:",
-          "SkipForLanguages": "Java;"
         },
         {
           "ExampleNumber": 2,
