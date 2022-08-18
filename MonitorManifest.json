@@ -22,7 +22,7 @@
           "ExampleNumber": 2,
           "ExampleName": "Query monitoring data with filters",
           "ExampleDescription": "<p>Demonstrates how to query an organization's data based on specified filters and aggregations.</p>",
-          "ExampleDescriptionExtended": "",
+          "ExampleDescriptionExtended": "<p>Demonstrates how to query an organization's data based on specified filters and aggregations.</p>",
           "LinksToAPIMethod": [
             {
               "Path": "https://developers.docusign.com/docs/monitor-api/reference/monitor/dataset/postwebquery/",
