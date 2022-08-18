@@ -16,7 +16,7 @@
           ],
           "PageTitle": "Get monitoring data",
           "ResultsPageHeader": "Get monitoring data",
-          "ResultsPageText": "Results from DataSet:getStream method:",
+          "ResultsPageText": "Results from DataSet:getStream method:"
         },
         {
           "ExampleNumber": 2,
