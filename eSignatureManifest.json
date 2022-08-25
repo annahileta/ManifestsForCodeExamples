@@ -23,7 +23,8 @@
                     ],
                     "PageTitle": "Embedded Signing Ceremony",
                     "ResultsPageHeader": "",
-                    "ResultsPageText": ""
+                    "ResultsPageText": "",
+                    "SkipForLanguages": "java;php"
                 },
                 {
                     "ExampleNumber": 2,
