@@ -1,4 +1,35 @@
 {
+    "SupportingTexts": {
+        "HomePageText": "Run and explore DocuSign esignature API code examples with Authorization Code Grant or JWT Grant authentication",
+        "ViewSourceFile": "View source file {0} on GitHub.",
+        "APIMethodUsed": "API method used:",
+        "APIMethodUsedPlural": "API methods used:",
+        "SubmitButton": "Submit",
+        "ContinueButton": "Submit",
+        "HomeButton": "Home",
+        "LoginButton": "Login",
+        "LogoutButton": "Logout",
+        "ChangeAPITypeButton": "Change API Type",
+        "WelcomeText": "Welcome {0}",
+        "LoginPage": {
+            "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
+            "LoginButton": "Authenticate with DocuSign",
+            "LoginHelperText": "You need to authenticate with DocuSign to continue your request."
+        },
+        "SelectAPIPage": {
+            "SelectAPIHeader": "<h1 class='display-4'>Please choose an API type</h1><label for='api_type'>Please choose an API type</label>",
+            "SelectAPIButton": "Choose your desired API"
+        },
+        "HelpingTexts": {
+            "EmailWontBeShared": "We'll never share your email with anyone else.",
+            "PhoneNumberWontBeShared": "We'll never share your phone number with anyone else.",
+            "CCEmailShouldDifferFromSigner": "The email for the cc recipient must be different from the signer's email.",
+            "AccessCodeText": "Provide this string to a recipient that is different such as in person or by mail or via different email.",
+            "CountryCodeText": "The country code for the phone below",
+            "ChooseDateInTheFuture": "Please choose a date in the future",
+            "PhoneNumberWillBeNotified": "This phone number will receive a notification."
+        }
+    },
     "Groups": 
     [
         {
@@ -9,6 +40,7 @@
                     "ExampleNumber": 1,
                     "ExampleName": "Request a signature through your app (embedded signing)",
                     "ExampleDescription": "Sends an envelope, then uses embedded signing for the first signer. With embedded signing, DocuSign signing is initiated from your website.",
+                    "Notes": "",
                     "LinksToAPIMethod": 
                     [
                         {
@@ -18,6 +50,31 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
                             "PathName": "EnvelopeViews:createRecipient"
+                        }
+                    ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessageCheck": "",
+                            "ErrorMessage": ""
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "RedirectText": ""
+                        }
+                    ],
+                    "Forms": [
+                        {
+                          "Inputs": [
+                            {
+                              "InputName": "Signer Email",
+                              "InputPlaceholder": ""
+                            },
+                            {
+                                "InputName": "Signer Name",
+                                "InputPlaceholder": ""
+                            }
+                          ]
                         }
                     ],
                     "ResultsPageText": ""
@@ -31,6 +88,28 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                          "Inputs": [
+                            {
+                              "InputName": "Signer Email",
+                              "InputPlaceholder": "pat@example.com"
+                            },
+                            {
+                                "InputName": "Signer Name",
+                                "InputPlaceholder": "Pat Johnson"
+                            },
+                            {
+                                "InputName": "CC Email",
+                                "InputPlaceholder": "pat@example.com"
+                            },
+                            {
+                                "InputName": "CC Name",
+                                "InputPlaceholder": "Pat Johnson"
+                            }
+                          ]
                         }
                     ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
@@ -59,6 +138,11 @@
                             "PathName": "Envelopes:get"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The envelope you created via Send an envelope with a remote (email) signer and cc recipient will be queried.</p>"
+                        }
+                    ],
                     "ResultsPageText": "Results from the Envelopes::get method:"
                 },
                 {
@@ -70,6 +154,11 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/enveloperecipients/list/",
                             "PathName": "EnvelopeRecipients:list"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The envelope you created via Send an envelope with a remote (email) signer and cc recipient will be queried.</p>"
                         }
                     ],
                     "ResultsPageText": ""
@@ -85,6 +174,11 @@
                             "PathName": "EnvelopeDocuments:list"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The envelope you created via Send an envelope with a remote (email) signer and cc recipient will be queried.</p>"
+                        }
+                    ],
                     "ResultsPageText": "Results from the EnvelopeDocuments::list method:"
                 },
                 {
@@ -96,6 +190,16 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopedocuments/get/",
                             "PathName": "EnvelopeDocuments:get"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Please choose a document.<br/>The document list is from your results for List an envelope's documents.</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Document selection"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": ""
@@ -128,6 +232,29 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The template you created via Create a template will be used.<br/>The document list is from your results for List an envelope's documents.</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
                 },
                 {
@@ -139,6 +266,28 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
@@ -158,6 +307,31 @@
                             "PathName": "EnvelopeViews:createSender"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Starting View"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "Sender view URL: {0}"
                 },
                 {
@@ -169,6 +343,15 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createconsole/",
                             "PathName": "EnvelopeViews:createConsole"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Starting View"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "NDSE view URL: {0}."
@@ -188,6 +371,35 @@
                             "PathName": "EnvelopeViews:createRecipient"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The template you created via Create a template will be used.</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Item"
+                                },
+                                {
+                                    "InputName": "Quantity"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": ""
                 },
                 {
@@ -203,6 +415,16 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
                             "PathName": "EnvelopeViews:createRecipient"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Name",
+                                  "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": ""
@@ -228,6 +450,28 @@
                             "PathName": "EnvelopeViews:createRecipient"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Name",
+                                  "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
                 }
             ]
@@ -247,6 +491,11 @@
                             "PathName": "EnvelopeFormData:get"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The last envelope you created with this example launcher will be queried. Recommendation: Use Send an envelope using a template, then this example, since Send an envelope using a template includes many tabs of different types.</p>"
+                        }
+                    ],
                     "ResultsPageText": "Results from the Envelopes::get method:"
                 },
                 {
@@ -258,6 +507,20 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Name",
+                                  "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": ""
@@ -273,6 +536,28 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Name",
+                                  "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": ""
                 },
                 {
@@ -284,6 +569,11 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopecustomfields/list/",
                             "PathName": "EnvelopeCustomFields:list"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>The last envelope you created with this example launcher will be queried. Recommendation: Create an envelope using <a href='{0}'>Set tab values for a envelope<a/> then use this example in order to see an example of custom tab values.</p>"
                         }
                     ],
                     "ResultsPageText": "Results from the EnvelopeCustomFields::list method:"
@@ -305,6 +595,24 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Access Code",
+                                  "InputPlaceholder": "Enter a recipient access code here"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
@@ -318,17 +626,54 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Country Code",
+                                  "InputPlaceholder": "1"
+                                },
+                                {
+                                    "InputName": "Signer Phone Number",
+                                    "InputPlaceholder": "415-555-1212"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
                     "ExampleNumber": 22,
                     "ExampleName": "Send an envelope with Recipient Knowledged Based Authentication",
                     "ExampleDescription": "Submit an envelope with multiple choice, public records based questions to provide multi-factor authentication.",
+                    "Note": "<p><b>Note:<b/> The access code for this example is the Signer Name.</p>",
                     "LinksToAPIMethod": 
                     [
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
@@ -337,11 +682,26 @@
                     "ExampleNumber": 23,
                     "ExampleName": "Send an envelope with ID Verification Authentication",
                     "ExampleDescription": "Submit an envelope that requires verification of a government issued identity.",
+                    "Note": "<p><b>Note:<b/> The access code for this example is the Signer Name.</p>",
                     "LinksToAPIMethod": 
                     [
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
@@ -363,6 +723,17 @@
                             "PathName": "AccountPermissionProfiles:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Permission profile</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Profile name",
+                                  "InputPlaceholder": "Profile name"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The permission profile was created!<br />Permission profile ID: {0}, name:{1}."
                 },
                 {
@@ -374,6 +745,20 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/usergroups/groups/update/",
                             "PathName": "Groups:update"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Permission profile",
+                                  "InputPlaceholder": "Select permission profile"
+                                },
+                                {
+                                    "InputName": "User group",
+                                    "InputPlaceholder": "Select user group"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The permission profile was successfully set to the user group!"
@@ -389,6 +774,17 @@
                             "PathName": "AccountPermissionProfiles:update"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Permission profile</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Profile name",
+                                  "InputPlaceholder": "Profile name"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The permission profile was updated!<br />Permission profile ID: {0}."
                 },
                 {
@@ -400,6 +796,16 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/accounts/accountpermissionprofiles/delete/",
                             "PathName": "AccountPermissionProfiles:delete"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Permission profile",
+                                  "InputPlaceholder": "Select permission profile"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The permission profile is deleted!"
@@ -421,6 +827,20 @@
                             "PathName": "AccountBrands:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>New brand</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Brand name",
+                                  "InputPlaceholder": "New Brand"
+                                },
+                                {
+                                    "InputName": "Default Brand language"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The brand has been created!<br />Brand ID: {0}."
                 },
                 {
@@ -434,6 +854,23 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Brand"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
@@ -445,6 +882,31 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Brand"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
@@ -482,6 +944,50 @@
                             "PathName": "BulkSend::getBulkSendBatchStatus"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Bulk copy #1</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Signer Name"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "CC Email"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "CC Name"
+                                }
+                            ]
+                        },
+                        {
+                            "FormName": "<p>Bulk copy #2</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Signer Name"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "CC Email"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "CC Name"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "Results from BulkSend:getBulkSendBatchStatus method:"
                 }
             ]
@@ -501,6 +1007,34 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Signer 1</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer name",
+                                  "InputPlaceholder": "Signer name"
+                                },
+                                {
+                                    "InputName": "Signer Email",
+                                    "InputPlaceholder": "Signer Email"
+                                }
+                            ]
+                        },
+                        {
+                            "FormName": "<p>Signer 2</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "Results from the Envelopes::create method:"
                 },
                 {
@@ -512,6 +1046,47 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
                             "PathName": "Envelopes:update"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Signer 1</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
+                        },
+                        {
+                            "FormName": "<p>Conditional signer 2 when unchecked</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
+                        },
+                        {
+                            "FormName": "<p>Conditional signer 2 when checked</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "Results from the Envelopes::update method:"
@@ -527,6 +1102,47 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "FormName": "<p>Signer 1</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
+                        },
+                        {
+                            "FormName": "<p>Conditional signer 2 when unchecked</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
+                        },
+                        {
+                            "FormName": "<p>Conditional signer 2 when checked</p>",
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "Signer Email"
+                                },
+                                {
+                                    "InputName": "Signer name",
+                                    "InputPlaceholder": "Signer name"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "Envelope ID {0} with conditional routing criteria has been created and sent to the first recipient!"
                 },
                 {
@@ -540,6 +1156,23 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Resume Date"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and scheduled!<br />Envelope ID {0}."
                 },
                 {
@@ -551,6 +1184,31 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer 1 Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer 1 Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "Signer 2 Email",
+                                    "InputPlaceholder": "dana@example.com"
+                                },
+                                {
+                                    "InputName": "Signer 2 Name",
+                                    "InputPlaceholder": "Dana Paxon"
+                                },
+                                {
+                                    "InputName": "Delay (in hours)"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
@@ -572,6 +1230,36 @@
                             "PathName": "Envelopes::create"
                         }
                     ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Country Code",
+                                  "InputPlaceholder": "1"
+                                },
+                                {
+                                    "InputName": "Signer Phone Number",
+                                    "InputPlaceholder": "415-555-1212"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Country Code",
+                                    "InputPlaceholder": "1"
+                                },
+                                {
+                                    "InputName": "CC Phone Number",
+                                    "InputPlaceholder": "415-555-1212"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
+                        }
+                    ],
                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
                 },
                 {
@@ -587,6 +1275,28 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
                             "PathName": "EnvelopeViews:createRecipient"
+                        }
+                    ],
+                    "Forms": [
+                        {
+                            "Inputs": [
+                                {
+                                  "InputName": "Signer Email",
+                                  "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "Signer Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                },
+                                {
+                                    "InputName": "CC Email",
+                                    "InputPlaceholder": "pat@example.com"
+                                },
+                                {
+                                    "InputName": "CC Name",
+                                    "InputPlaceholder": "Pat Johnson"
+                                }
+                            ]
                         }
                     ],
                     "ResultsPageText": ""

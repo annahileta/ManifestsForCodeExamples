@@ -1,4 +1,35 @@
 {
+  "SupportingTexts": {
+    "HomePageText": "Run and explore DocuSign esignature API code examples with Authorization Code Grant or JWT Grant authentication",
+    "ViewSourceFile": "View source file {0} on GitHub.",
+    "APIMethodUsed": "API method used:",
+    "APIMethodUsedPlural": "API methods used:",
+    "SubmitButton": "Submit",
+    "ContinueButton": "Submit",
+    "HomeButton": "Home",
+    "LoginButton": "Login",
+    "LogoutButton": "Logout",
+    "ChangeAPITypeButton": "Change API Type",
+    "WelcomeText": "Welcome {0}",
+    "LoginPage": {
+        "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
+        "LoginButton": "Authenticate with DocuSign",
+        "LoginHelperText": "You need to authenticate with DocuSign to continue your request."
+    },
+    "SelectAPIPage": {
+        "SelectAPIHeader": "<h1 class='display-4'>Please choose an API type</h1><label for='api_type'>Please choose an API type</label>",
+        "SelectAPIButton": "Choose your desired API"
+    },
+    "HelpingTexts": {
+        "EmailWontBeShared": "We'll never share your email with anyone else.",
+        "PhoneNumberWontBeShared": "We'll never share your phone number with anyone else.",
+        "CCEmailShouldDifferFromSigner": "The email for the cc recipient must be different from the signer's email.",
+        "AccessCodeText": "Provide this string to a recipient that is different such as in person or by mail or via different email.",
+        "CountryCodeText": "The country code for the phone below",
+        "ChooseDateInTheFuture": "Please choose a date in the future",
+        "PhoneNumberWillBeNotified": "This phone number will receive a notification."
+    }
+  },
   "Groups": [
     {
       "Name": "Rooms examples",
@@ -15,6 +46,16 @@
             {
               "Path": "https://developers.docusign.com/rooms-api/reference/Roles/Roles/GetRoles",
               "PathName": "Roles::GetRoles"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room name",
+                  "InputPlaceholder": "Room name"
+                }
+              ]
             }
           ],
           "ResultsPageText": "The room \"{0}\" has been created!<br/> Room ID: {1}."
@@ -37,6 +78,19 @@
               "PathName": "Roles::GetRoles"
             }
           ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room name",
+                  "InputPlaceholder": "Room name"
+                },
+                {
+                  "InputName": "Template"
+                }
+              ]
+            }
+          ],
           "ResultsPageText": "The room \"{0}\" has been created!<br/> Room ID: {1}."
         },
         {
@@ -51,6 +105,15 @@
             {
               "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRoomFieldData",
               "PathName": "Rooms::GetRoomFieldData"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room"
+                }
+              ]
             }
           ],
           "ResultsPageText": "Results from the Rooms::GetRoomFieldData method:"
@@ -77,6 +140,18 @@
               "PathName": "Rooms::AddFormToRoom"
             }
           ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Room"
+                },
+                {
+                  "InputName": "Form"
+                }
+              ]
+            }
+          ],
           "ResultsPageText": "Results from the Rooms::AddFormToRoom method:"
         },
         {
@@ -87,6 +162,18 @@
             {
               "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
               "PathName": "Rooms::GetRooms"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Start date"
+                },
+                {
+                  "InputName": "End date"
+                }
+              ]
             }
           ],
           "ResultsPageText": "Results from the Rooms::GetRooms method:"
@@ -109,6 +196,25 @@
               "PathName": "Forms::CreateExternalFormFillSession"
             }
           ],
+          "Forms": [
+            {
+              "FormName": "<p>Please select a form document</p>",
+              "Inputs": [
+                {
+                  "InputName": "Forms"
+                }
+              ]
+            },
+            {
+              "FormName": "<p>Please select a room</p>",
+              "Inputs": [
+                {
+                  "InputName": "Rooms",
+                  "InputPlaceholder": "Please select a room"
+                }
+              ]
+            }
+          ],
           "ResultsPageText": "Results from the Forms::CreateExternalFormFillSession:"
         },
         {
@@ -119,6 +225,16 @@
             {
               "Path": "https://developers.docusign.com/docs/rooms-api/how-to/create-form-group",
               "PathName": "Rooms::CreateFormGroup"
+            }
+          ],
+          "Forms": [
+            {
+              "Inputs": [
+                {
+                  "InputName": "Form group name",
+                  "InputPlaceholder": "Form group name"
+                }
+              ]
             }
           ],
           "ResultsPageText": "The Form Group \"{0}\" has been created!"
@@ -141,6 +257,21 @@
               "PathName": "Offices::GetOffices"
             }
           ],
+          "Forms": [
+            {
+              "FormName": "<p>Please select an office and a form group</p>",
+              "Inputs": [
+                {
+                  "InputName": "Form group",
+                  "InputPlaceholder": "Please select a form group"
+                },
+                {
+                  "InputName": "Office",
+                  "InputPlaceholder": "Please select an office"
+                }
+              ]
+            }
+          ],
           "ResultsPageText": "Office \"{0}\" has been assigned to Form Group \"{1}\""
         },
         {
@@ -159,6 +290,21 @@
             {
               "Path": "https://developers.docusign.com/docs/rooms-api/reference/forms/formlibraries/getformlibraries",
               "PathName": "FormLibraries:GetFormLibraries"
+            }
+          ],
+          "Forms": [
+            {
+              "FormName": "<p>Please select an office and a form group</p>",
+              "Inputs": [
+                {
+                  "InputName": "Form group",
+                  "InputPlaceholder": "Please select a form group"
+                },
+                {
+                  "InputName": "Form",
+                  "InputPlaceholder": "Please select a form"
+                }
+              ]
             }
           ],
           "ResultsPageText": "Form \"{0}\" has been assigned to Form Group \"{1}\"!"
