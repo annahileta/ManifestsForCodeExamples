@@ -40,10 +40,7 @@
                                 "ExampleNumber",
                                 "ExampleName",
                                 "ExampleDescription",
-                                "ExampleDescriptionExtended",
                                 "LinksToAPIMethod",
-                                "PageTitle",
-                                "ResultsPageHeader",
                                 "ResultsPageText"
                             ],
                             "properties": {
@@ -69,14 +66,6 @@
                                     "title": "Longer information about the code example that is displayed on the homepage.",
                                     "examples": [
                                         "Sends an envelope, then uses embedded signing for the first signer. With embedded signing, DocuSign signing is initiated from your website."
-                                    ]
-                                },
-                                "ExampleDescriptionExtended": {
-                                    "type": "string",
-                                    "default": "",
-                                    "title": "Longer information about the code example that is displayed on the code example's page.",
-                                    "examples": [
-                                        "<p>This example sends an envelope and then uses embedded signing for the first signer. With embedded signing, the DocuSign signing experience is initiated from your website.</p>",
                                     ]
                                 },
                                 "LinksToAPIMethod": {
@@ -112,22 +101,6 @@
                                         }]
                                     }
                                 },
-                                "PageTitle": {
-                                    "type": "string",
-                                    "default": "",
-                                    "title": "The page title for the code example.",
-                                    "examples": [
-                                        "Embedded Signing Ceremony"
-                                    ]
-                                },
-                                "ResultsPageHeader": {
-                                    "type": "string",
-                                    "default": "",
-                                    "title": "The header for the result's page.",
-                                    "examples": [
-                                        "Envelope sent"
-                                    ]
-                                },
                                 "ResultsPageText": {
                                     "type": "string",
                                     "default": "",
@@ -146,7 +119,6 @@
                                         "title": "An additional pags connected to this code example.",
                                         "required": [
                                             "Name",
-                                            "ResultsPageHeader",
                                             "ResultsPageText"
                                         ],
                                         "properties": {
@@ -156,14 +128,6 @@
                                                 "title": "Name of the additional code example.",
                                                 "examples": [
                                                     "file_state_success"
-                                                ]
-                                            },
-                                            "ResultsPageHeader": {
-                                                "type": "string",
-                                                "default": "",
-                                                "title": "The header for the result of the additional page.",
-                                                "examples": [
-                                                    "Add users via bulk import"
                                                 ]
                                             },
                                             "ResultsPageText": {
