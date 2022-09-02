@@ -485,6 +485,7 @@
                     "ExampleNumber": 14,
                     "ExampleName": "Send an envelope with an order form and payment field",
                     "ExampleDescription": "Anchor text (<a target='_blank' href=\"https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/tabs/auto-place/\">AutoPlace</a>) is used to position the fields in the documents.",
+                    "Notes": "<h5 style=\"color: purple;\">Note: This example will only work if the sender's DocuSign account is set up with a DocuSign payment gateway. Since the Payment Gateway ID is set in the configuration file, you will need to run your own instance of this project to set it.</h5>",
                     "LinksToAPIMethod": 
                     [
                         {
@@ -877,6 +878,7 @@
                     "ExampleNumber": 27,
                     "ExampleName": "Deleting a permission profile",
                     "ExampleDescription": "Deleting a permission profile",
+                    "Notes": "<strong>Note:</strong> You cannot remove \"Everyone\" nor \"Administrator\" permission profiles.</p>",
                     "LinksToAPIMethod": 
                     [
                         {
