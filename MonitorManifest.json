@@ -1,6 +1,6 @@
 {
   "SupportingTexts": {
-    "HomePageText": "Run and explore DocuSign esignature API code examples with Authorization Code Grant or JWT Grant authentication",
+    "HomePageText": "Run and explore DocuSign Monitor API code examples with JWT Grant authentication",
     "ViewSourceFile": "View source file {0} on GitHub.",
     "APIMethodUsed": "API method used:",
     "APIMethodUsedPlural": "API methods used:",
@@ -10,7 +10,7 @@
     "LoginButton": "Login",
     "LogoutButton": "Logout",
     "ChangeAPITypeButton": "Change API Type",
-    "WelcomeText": "Welcome {0}",
+    "WelcomeText": "Welcome {0} (Account: {1})",
     "LoginPage": {
         "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
         "LoginButton": "Authenticate with DocuSign",

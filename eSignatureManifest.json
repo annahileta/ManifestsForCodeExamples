@@ -10,7 +10,7 @@
         "LoginButton": "Login",
         "LogoutButton": "Logout",
         "ChangeAPITypeButton": "Change API Type",
-        "WelcomeText": "Welcome {0}",
+        "WelcomeText": "Welcome {0} (Account: {1})",
         "LoginPage": {
             "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
             "LoginButton": "Authenticate with DocuSign",
