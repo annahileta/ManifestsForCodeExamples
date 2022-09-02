@@ -101,6 +101,11 @@
               "PathName": "MultiProductUserManagement::addOrUpdateUser"
             }
           ],
+          "CustomErrorTexts": [
+            {
+              "ErrorMessage": "You do not have any groups set in your DocuSign Admin. Please go to DocuSign Admin and create a group to use this code example."
+            }
+          ],
           "Forms": [
             {
               "Inputs": [

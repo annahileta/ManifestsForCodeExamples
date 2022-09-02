@@ -695,6 +695,12 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessageCheck": "IDENTITY_WORKFLOW_INVALID_ID",
+                            "ErrorMessage": "Please contact <a target='_blank' href='https://support.docusign.com'>Support</a> to enable recipient phone authentication in your account."
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
@@ -759,6 +765,12 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessageCheck": "IDENTITY_WORKFLOW_INVALID_ID",
+                            "ErrorMessage": "Please contact <a target='_blank' href='https://support.docusign.com'>Support</a> to enable IDV in your account."
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
@@ -816,6 +828,11 @@
                             "PathName": "Groups:update"
                         }
                     ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessage": "The permission profile failed to set to the user group"
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
@@ -865,6 +882,11 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/accounts/accountpermissionprofiles/delete/",
                             "PathName": "AccountPermissionProfiles:delete"
+                        }
+                    ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessage": "The permission profile failed to delete"
                         }
                     ],
                     "Forms": [
@@ -1029,6 +1051,11 @@
                             "PathName": "BulkSend::getBulkSendBatchStatus"
                         }
                     ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessage": "Bulk send envelope failed."
+                        }
+                    ],
                     "Forms": [
                         {
                             "FormName": "<p>Bulk copy #1</p>",
@@ -1191,6 +1218,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessageCheck": "WORKFLOW_UPDATE_RECIPIENTROUTING_NOT_ALLOWED",
+                            "ErrorMessage": "Update to the workflow with recipient routing is not allowed for your account! Please contact with our <a href='https://developers.docusign.com/support/' target='_blank'>support team</a> to resolve this issue."
                         }
                     ],
                     "Forms": [

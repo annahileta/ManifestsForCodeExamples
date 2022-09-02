@@ -157,6 +157,12 @@
                 "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
             }
           ],
+          "CustomErrorTexts": [
+            {
+                "ErrorMessageCheck": "FORMS_INTEGRATION_NOT_ENABLED",
+                "ErrorMessage": "<p>Problem: This example is not available.</p><p>DocuSign Forms is not enabled for your DocuSign account. Please contact <a href='mailto:roomssandbox@docusign.com'>DocuSign Rooms Support</a> to enable Forms.</p>"
+            }
+          ],
           "Forms": [
             {
               "Inputs": [
@@ -335,6 +341,12 @@
             },
             {
               "RedirectText": "<p>Problem: please first create a form. <br />Thank you.</p>"
+            }
+          ],
+          "CustomErrorTexts": [
+            {
+                "ErrorMessageCheck": "Unhandled response type.",
+                "ErrorMessage": "Response is empty and could not be cast to FormGroupFormToAssign. Please contact DocuSign support"
             }
           ],
           "Forms": [
