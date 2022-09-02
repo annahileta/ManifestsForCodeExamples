@@ -246,6 +246,12 @@
               "PathName": "MultiProductUserManagement::addUserProductPermissionProfilesByEmail"
             }
           ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 2,
+                "RedirectText": "<p>Problem: You do not have the user to change permissions for. Go to example#2 and create one: <a {0}>create active CLM/eSign User.</a> <br/></p>"
+            }
+          ],
           "Forms": [
             {
               "FormName": "<p>Update user product permission profile for the following email: {0}</p>",
@@ -273,6 +279,12 @@
             {
               "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/removeuserproductpermission",
               "PathName": "MultiProductUserManagement::removeUserProductPermission"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 2,
+                "RedirectText": "<p>Problem: You do not have the user to change permissions for. Go to example#2 and create one: <a {0}>create active CLM/eSign User.</a> <br/></p>"
             }
           ],
           "Forms": [

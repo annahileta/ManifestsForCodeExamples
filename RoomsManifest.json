@@ -78,6 +78,11 @@
               "PathName": "Roles::GetRoles"
             }
           ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "RedirectText": "<p>Problem: you don't have any templates. Please first create a form template using <a href='https://demo.rooms.docusign.com/admin/company/roomtemplates' target='_blank'>DocuSign Admin.</a> <br />Thank you.</p>"
+            }
+          ],
           "Forms": [
             {
               "Inputs": [
@@ -105,6 +110,12 @@
             {
               "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRoomFieldData",
               "PathName": "Rooms::GetRoomFieldData"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 1,
+                "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
             }
           ],
           "Forms": [
@@ -138,6 +149,12 @@
             {
               "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/AddFormToRoom",
               "PathName": "Rooms::AddFormToRoom"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+                "CodeExampleToRedirectTo": 1,
+                "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
             }
           ],
           "Forms": [
@@ -194,6 +211,16 @@
             {
               "Path": "https://developers.docusign.com/rooms-api/reference/Forms/ExternalFormFillSessions/CreateExternalFormFillSession",
               "PathName": "Forms::CreateExternalFormFillSession"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "CodeExampleToRedirectTo": 4,
+              "RedirectText": "<p>Problem: selected rooms does not has any documents. Please first add form to a room using <a {0}>example 4.</a> <br />Thank you.</p>"
+            },
+            {
+              "CodeExampleToRedirectTo": 1,
+              "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
             }
           ],
           "Forms": [
@@ -257,6 +284,15 @@
               "PathName": "Offices::GetOffices"
             }
           ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "CodeExampleToRedirectTo": 7,
+              "RedirectText": "<p>Problem: please first create a form group using <a {0}>example 7.</a> <br />Thank you.</p>"
+            },
+            {
+              "RedirectText": " <p>Problem: please first create an office</p>"
+            }
+          ],
           "Forms": [
             {
               "FormName": "<p>Please select an office and a form group</p>",
@@ -290,6 +326,15 @@
             {
               "Path": "https://developers.docusign.com/docs/rooms-api/reference/forms/formlibraries/getformlibraries",
               "PathName": "FormLibraries:GetFormLibraries"
+            }
+          ],
+          "RedirectsToOtherCodeExamples": [
+            {
+              "CodeExampleToRedirectTo": 7,
+              "RedirectText": "<p>Problem: please first create a form group using <a {0}>example 7.</a> <br />Thank you.</p>"
+            },
+            {
+              "RedirectText": "<p>Problem: please first create a form. <br />Thank you.</p>"
             }
           ],
           "Forms": [

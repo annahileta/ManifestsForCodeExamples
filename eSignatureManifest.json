@@ -138,6 +138,12 @@
                             "PathName": "Envelopes:get"
                         }
                     ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 2,
+                            "RedirectText": "<p>Problem: please first create an envelope using <a {0}>Send an envelope with a remote (email) signer and cc recipient.</a> <br />You will then need to use List an envelope's documents to create the list of documents.<br />Thank you.</p>"
+                        }
+                    ],
                     "Forms": [
                         {
                             "FormName": "<p>The envelope you created via Send an envelope with a remote (email) signer and cc recipient will be queried.</p>"
@@ -154,6 +160,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/enveloperecipients/list/",
                             "PathName": "EnvelopeRecipients:list"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 2,
+                            "RedirectText": "<p>Problem: please first create an envelope using <a {0}>Send an envelope with a remote (email) signer and cc recipient.</a> <br />You will then need to use List an envelope's documents to create the list of documents.<br />Thank you.</p>"
                         }
                     ],
                     "Forms": [
@@ -174,6 +186,12 @@
                             "PathName": "EnvelopeDocuments:list"
                         }
                     ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 2,
+                            "RedirectText": "<p>Problem: please first create an envelope using <a {0}>Send an envelope with a remote (email) signer and cc recipient.</a> <br />You will then need to use List an envelope's documents to create the list of documents.<br />Thank you.</p>"
+                        }
+                    ],
                     "Forms": [
                         {
                             "FormName": "<p>The envelope you created via Send an envelope with a remote (email) signer and cc recipient will be queried.</p>"
@@ -190,6 +208,16 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopedocuments/get/",
                             "PathName": "EnvelopeDocuments:get"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 2,
+                            "RedirectText": "<p>Problem: please first create an envelope using <a {0}>Send an envelope with a remote (email) signer and cc recipient.</a> <br />You will then need to use List an envelope's documents to create the list of documents.<br />Thank you.</p>"
+                        },
+                        {
+                            "CodeExampleToRedirectTo": 6,
+                            "RedirectText": "<p>Problem: please first create a list of the envelope's documents using<a {0}>List an envelope's documents.</a> <br />Thank you.</p>"
                         }
                     ],
                     "Forms": [
@@ -230,6 +258,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 8,
+                            "RedirectText": "<p>Prerequisite: Please first create the template using <a {0}>Create a template</a>.</p>"
                         }
                     ],
                     "Forms": [
@@ -345,6 +379,12 @@
                             "PathName": "EnvelopeViews:createConsole"
                         }
                     ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 2,
+                            "RedirectText": "<p><b>Optional:</b> To use the <i>envelope's Documents view,</i> please first create an envelope using <a {0}>Send an envelope with a remote (email) signer and cc recipient</a>.</p>"
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
@@ -369,6 +409,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
                             "PathName": "EnvelopeViews:createRecipient"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 8,
+                            "RedirectText": "<p>Prerequisite: Please first create the template using <a {0}>Create a template</a>.</p>"
                         }
                     ],
                     "Forms": [
@@ -450,6 +496,11 @@
                             "PathName": "EnvelopeViews:createRecipient"
                         }
                     ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                          "RedirectText": "<p>Prerequisite: Please set the <b>DS_PAYMENT_GATEWAY_ID</b> value in the configuration file.</p>"
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
@@ -489,6 +540,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeformdata/get/",
                             "PathName": "EnvelopeFormData:get"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 9,
+                            "RedirectText": "<p>Prerequisite: Please first create an envelope using <a {0}>Send an envelope using a template</a>.</p>"
                         }
                     ],
                     "Forms": [
@@ -536,6 +593,12 @@
                             "PathName": "Envelopes:create"
                         }
                     ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 2,
+                            "RedirectText": "<p>Prerequisite: Please first create the template using <a {0}>Create a template</a>.</p>"
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
@@ -569,6 +632,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopecustomfields/list/",
                             "PathName": "EnvelopeCustomFields:list"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 16,
+                            "RedirectText": "<p>Problem: Please first create an envelope using <a {0}>Set tab values for a envelope</a>.</p>"
                         }
                     ],
                     "Forms": [
@@ -827,6 +896,12 @@
                             "PathName": "AccountBrands:create"
                         }
                     ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                          "CodeExampleToRedirectTo": 28,
+                          "RedirectText": "<p>No brands were found for this account; please <a {0}>create one</a> first.</p>"
+                        }
+                    ],
                     "Forms": [
                         {
                             "FormName": "<p>New brand</p>",
@@ -882,6 +957,16 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                          "CodeExampleToRedirectTo": 28,
+                          "RedirectText": "<p>No brands were found for this account; please <a {0}>create one</a> first.</p>"
+                        },
+                        {
+                            "CodeExampleToRedirectTo": 8,
+                            "RedirectText": "<p>Prerequisite: Please first create the template using <a {0}>Create a template/a>.</p>"
                         }
                     ],
                     "Forms": [
@@ -1046,6 +1131,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
                             "PathName": "Envelopes:update"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                            "CodeExampleToRedirectTo": 32,
+                            "RedirectText": "<p>Prerequisite: Please first create an envelope with a paused signature workflow using <a {0}>Pause a signature workflow</a>.</p>"
                         }
                     ],
                     "Forms": [
