@@ -51,27 +51,16 @@
                             "PathName": "EnvelopeViews:createRecipient"
                         }
                     ],
-                    "CustomErrorTexts": [
-                        {
-                            "ErrorMessageCheck": "",
-                            "ErrorMessage": ""
-                        }
-                    ],
-                    "RedirectsToOtherCodeExamples": [
-                        {
-                            "RedirectText": ""
-                        }
-                    ],
                     "Forms": [
                         {
                           "Inputs": [
                             {
                               "InputName": "Signer Email",
-                              "InputPlaceholder": ""
+                              "InputPlaceholder": "pat@example.com"
                             },
                             {
                                 "InputName": "Signer Name",
-                                "InputPlaceholder": ""
+                                "InputPlaceholder": "Pat Johnson"
                             }
                           ]
                         }
