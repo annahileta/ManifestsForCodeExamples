@@ -584,7 +584,7 @@
                     ],
                     "RedirectsToOtherCodeExamples": [
                         {
-                            "CodeExampleToRedirectTo": 2,
+                            "CodeExampleToRedirectTo": 8,
                             "RedirectText": "<p>Prerequisite: Please first create the template using <a {0}>Create a template</a>.</p>"
                         }
                     ],
@@ -908,12 +908,6 @@
                             "PathName": "AccountBrands:create"
                         }
                     ],
-                    "RedirectsToOtherCodeExamples": [
-                        {
-                          "CodeExampleToRedirectTo": 28,
-                          "RedirectText": "<p>No brands were found for this account; please <a {0}>create one</a> first.</p>"
-                        }
-                    ],
                     "Forms": [
                         {
                             "FormName": "<p>New brand</p>",
@@ -939,6 +933,12 @@
                         {
                             "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                             "PathName": "Envelopes:create"
+                        }
+                    ],
+                    "RedirectsToOtherCodeExamples": [
+                        {
+                          "CodeExampleToRedirectTo": 28,
+                          "RedirectText": "<p>No brands were found for this account; please <a {0}>create one</a> first.</p>"
                         }
                     ],
                     "Forms": [

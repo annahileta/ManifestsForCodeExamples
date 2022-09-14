@@ -54,7 +54,6 @@
           ],
           "Forms": [
             {
-              "FormName": "",
               "Inputs": [
                 {
                   "InputName": "User name",
