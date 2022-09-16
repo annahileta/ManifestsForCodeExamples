@@ -898,6 +898,12 @@
                             "PathName": "Envelopes::create"
                         }
                     ],
+                    "CustomErrorTexts": [
+                        {
+                            "ErrorMessageCheck": "ACCOUNT_LACKS_PERMISSIONS",
+                            "ErrorMessage": "See <a href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/set-document-visibility\"> How to set document visibility for envelope recipients</a> in the DocuSign Developer Center for instructions on how to enable document visibility in your developer account."
+                        }
+                    ],
                     "Forms": [
                         {
                             "Inputs": [
