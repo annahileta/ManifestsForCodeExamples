@@ -4,6 +4,7 @@
      "ViewSourceFile":"View source file {0} on GitHub.",
      "APIMethodUsed":"API method used:",
      "APIMethodUsedPlural":"API methods used:",
+     "SearchFailed": "<p>The examples with this text could not be found. Please, modify the search field</p>",
      "SubmitButton":"Submit",
      "ContinueButton":"Continue",
      "HomeButton":"Home",
