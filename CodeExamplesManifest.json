@@ -48,7 +48,6 @@
                           "PathName":"Envelopes:create"
                        }
                     ],
-                    "SkipForLanguages": "java;PHP;c#;node;ruby",
                     "Forms":[
                        {
                           "Inputs":[
@@ -87,7 +86,6 @@
                           "PathName":"EnvelopeViews:createRecipient"
                        }
                     ],
-                    "SkipForLanguages": "ruby;python",
                     "Forms":[
                        {
                           "Inputs":[
@@ -120,7 +118,6 @@
                           "RedirectText":"<p>Prerequisite: Please first create the template using <a {0}>Create a template</a>.</p>"
                        }
                     ],
-                    "SkipForLanguages": "python;node",
                     "Forms":[
                        {
                           "FormName":"<p>The template you created via Create a template will be used.<br/>The document list is from your results for List an envelope's documents.</p>",

@@ -44,7 +44,6 @@
               "PathName": "DataSet:getStream"
             }
           ],
-          "SkipForLanguages": "java;PHP;c#",
           "ResultsPageText": "Results from DataSet:getStream method:"
         },
         {
