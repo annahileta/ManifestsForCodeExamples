@@ -1528,53 +1528,6 @@
                  "ResultsPageText": "The clickwrap has been activated!"
                },
                {
-                 "ExampleNumber": 6,
-                 "ExampleName": "Embed a clickwrap",
-                 "ExampleDescription": "Creates a unique URL for an active clickwrap and embeds the clickwrap on your page.",
-                 "LinksToAPIMethod": [
-                   {
-                     "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createhasagreed/",
-                     "PathName": "ClickWraps::createHasAgreed"
-                   }
-                 ],
-                 "RedirectsToOtherCodeExamples": [
-                   {
-                     "CodeExampleToRedirectTo": 1,
-                     "RedirectText": "<p>Problem: You do not have an active clickwrap. <a {0}>Create a clickwrap.</a> <br/></p>"
-                   },
-                   {
-                     "CodeExampleToRedirectTo": 2,
-                     "RedirectText": "<p>Problem: Your clickwrap is inactive. <a {0}>Activate a clickwrap.</a> <br/></p>"
-                   }
-                 ],
-                 "Forms": [
-                   {
-                     "FormName": "<p>Choose a clickwrap to embed:</p>",
-                     "Inputs": [
-                       {
-                         "InputName": "Clickwrap"
-                       },
-                       {
-                         "InputName": "Full Name"
-                       },
-                       {
-                         "InputName": "Email"
-                       },
-                       {
-                         "InputName": "Company"
-                       },
-                       {
-                         "InputName": "Job Title"
-                       },
-                       {
-                         "InputName": "Date"
-                       }
-                     ]
-                   }
-                 ],
-                 "ResultsPageText": "See the embedded clickwrap in the dialog box."
-               },
-               {
                  "ExampleNumber": 3,
                  "ExampleName": "Create a new clickwrap version",
                  "ExampleDescription": "Creates a new version of a clickwrap.",
