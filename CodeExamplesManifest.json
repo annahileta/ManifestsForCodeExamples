@@ -424,7 +424,7 @@
                             }
                         ],
                         "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
-                    },
+                    }
                 ]
             },
             {
