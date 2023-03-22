@@ -374,7 +374,7 @@
                     {
                         "ExampleNumber": 42,
                         "CFREnabled": "NonCFR",
-                        "ExampleName": "Request a signature by email with document genera",
+                        "ExampleName": "Request a signature by email with document generation",
                         "ExampleDescription": "Creates an envelope from a template with a document that is dynamically generated to include all the customized data specified by the sender.",
                         "LinksToAPIMethod": 
                         [
