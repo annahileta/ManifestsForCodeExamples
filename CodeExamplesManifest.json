@@ -383,12 +383,24 @@
                                 "PathName": "Templates:create"
                             },
                             {
+                                "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templatedocuments/update/",
+                                "PathName": "TemplateDocuments:update"
+                            },
+                            {
+                                "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templaterecipienttabs/create/",
+                                "PathName": "TemplateRecipientTabs:create"
+                            },
+                            {
                                 "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
                                 "PathName": "Envelopes:create"
                             },
                             {
-                                "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopedocuments/get/",
-                                "PathName": "EnvelopeDocuments:get"
+                                "Path": "",
+                                "PathName": "DocGenFormFields:get"
+                            },
+                            {
+                                "Path": "",
+                                "PathName": "DocGenFormFields:update"
                             },
                             {
                                 "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
