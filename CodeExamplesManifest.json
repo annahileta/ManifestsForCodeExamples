@@ -1447,13 +1447,17 @@
                     {
                         "ExampleNumber": 43,
                         "CFREnabled": "AllAccounts",
-                        "ExampleName": " Share access to a DocuSign envelope inbox",
+                        "ExampleName": "Share access to a DocuSign envelope inbox",
                         "ExampleDescription": "Share envelope inbox access with an agent user and view the principal user's envelopes using the Shared Access view in the DocuSign UI",
                         "LinksToAPIMethod": 
                         [
                             {
                                 "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/users/users/create/",
                                 "PathName": "Users:create"
+                            },
+                            {
+                                "Path": "",
+                                "PathName": "Users:authorization"
                             },
                             {
                                 "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/liststatus/",
@@ -1486,7 +1490,7 @@
                             },
                             {
                                 "Name":"list_status_successful",
-                                "ResultsPageText":"<p>Go to the <a href=\"https://appdemo.docusign.com/documents\">Manage</a> tab in the agent's DocuSign developer account, select shared access in the upper left, then select the principal's account to view the principal's envelopes. For details, see <a href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/shared-access/#expected-response\">How to share access to a DocuSign inbox</a>.</p><br/><p>Results from Envelopes:listStatus method:</p>"
+                                "ResultsPageText":"<p>Go to the <a href=\"https://appdemo.docusign.com/documents\">Manage</a> tab in the agent's DocuSign developer account, select shared access in the upper left, then select the principal's account to view the principal's envelopes. For details, see <a href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/shared-access/#expected-response\">How to share access to a DocuSign inbox</a>.</p><p>Results from Envelopes:listStatus method:</p>"
                             },
                             {
                                 "Name":"list_status_unsuccessful",
