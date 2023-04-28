@@ -1486,7 +1486,7 @@
                         "AdditionalPage": [
                             {
                                "Name":"authenticate_as_agent",
-                               "ResultsPageText":"Continue below will log out the principal user. You will be redirected to the log in page where you should authenticate as the agent user that you just created."
+                               "ResultsPageText":"Please go to the principal's developer account at <a href=\"https://admindemo.docusign.com\">admindemo.docusign.com</a> and log out, then come back to this page and press continue. You will be redirected to the log in page where you should authenticate as the agent user that you just created."
                             },
                             {
                                 "Name":"list_status_successful",
