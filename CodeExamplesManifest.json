@@ -2511,10 +2511,6 @@
                 {
                   "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/datadeletion/redactindividualuserdata/",
                   "PathName": "DataDeletion:redactIndividualUserData"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles/",
-                  "PathName": "eSignUserManagement:getUserProfiles"
                 }
               ],
               "Forms": [
