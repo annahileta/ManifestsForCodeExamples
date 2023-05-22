@@ -2483,8 +2483,8 @@
               "ExampleDescription": "Deletes user data from an account.This endpoint should be used by an organization admin.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/datadeletion/redactindividualmembershipdata/",
-                  "PathName": "DataDeletion:redactIndividualMembershipData"
+                  "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/datadeletion/redactindividualuserdata/",
+                  "PathName": "DataDeletion:redactIndividualUserData"
                 },
                 {
                   "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles/",
@@ -2509,8 +2509,8 @@
               "ExampleDescription": "Deletes user data from an account.This endpoint should be used by an account admin.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/datadeletion/redactindividualuserdata/",
-                  "PathName": "DataDeletion:redactIndividualUserData"
+                  "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/datadeletion/redactindividualmembershipdata/",
+                  "PathName": "DataDeletion:redactIndividualMembershipData"
                 }
               ],
               "Forms": [
