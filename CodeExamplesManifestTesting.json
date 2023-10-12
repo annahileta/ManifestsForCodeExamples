@@ -49,7 +49,7 @@
                     "Examples": [
                         {
                     "ExampleNumber": 44,
-                    "CFREnabled": "NonCFR",
+                    "CFREnabled": "AllAccounts",
                     "ExampleName": "Request a signature using focused view",
                     "ExampleDescription": "Sends an envelope, then uses focused view for the signer.",
                     "LinksToAPIMethod": [
