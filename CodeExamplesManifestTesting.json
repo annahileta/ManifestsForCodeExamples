@@ -473,38 +473,6 @@
                     ]
                 },
                 {
-                    "ExampleNumber": 44,
-                    "CFREnabled": "NonCFR",
-                    "ExampleName": "Request a signature using focused view",
-                    "ExampleDescription": "Sends an envelope, then uses focused view for the signer.",
-                    "LinksToAPIMethod": [
-                        {
-                            "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                            "PathName": "Envelopes:create"
-                        },
-                        {
-                            "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
-                            "PathName": "EnvelopeViews:createRecipient"
-                        }
-                    ],
-                    "Forms": [
-                        {
-                            "Inputs": [
-                                {
-                                    "InputName": "Signer Email",
-                                    "InputPlaceholder": "pat@example.com"
-                                },
-                                {
-                                    "InputName": "Signer Name",
-                                    "InputPlaceholder": "Pat Johnson"
-                                }
-                            ]
-                        }
-                    ],
-                    "ResultsPageText": "",
-                    "SkipForLanguages": "bash;java;node;php;powershell;python;ruby"
-                },
-                {
                     "Name": "Working with envelopes and templates",
                     "Examples": [
                         {
