@@ -42,6 +42,31 @@
     },
     "APIs": [
         {
+            "Name": "WebForms",
+            "Groups": [
+                {
+                    "Name": "Web forms",
+                    "Examples": [
+                        {
+                            "ExampleNumber": 1,
+                            "ExampleName": "Create and embed an instance of a web form",
+                            "ExampleDescription": "Creates an instance of a web form and embeds it on an HTML page.",
+                            "LinksToAPIMethod": [
+                                {
+                                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/", 
+                                  "PathName": "WebForms:ListWebForms"
+                                },
+                                {
+                                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
+                                  "PathName": "WebForms:CreateInstance"
+                                }
+                      ],
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "Connect",
             "Groups": [
                 {
