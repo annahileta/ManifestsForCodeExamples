@@ -61,6 +61,16 @@
                                   "PathName": "WebForms:CreateInstance"
                                 }
                             ],
+                            "Forms": [
+                                {
+                                    "Inputs": [
+                                        {
+                                            "InputName": "Web Form ID",
+                                            "InputPlaceholder": "00000000-0000-0000-0000-000000000000"
+                                        }
+                                    ]
+                                }
+                            ],
                             "AdditionalPage": [
                                 {
                                     "Name": "create_web_form",
