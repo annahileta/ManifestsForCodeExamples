@@ -1925,6 +1925,64 @@
             }
          ]
       },
+    {
+        "Name": "Maestro",
+        "Groups": [
+            {
+                "Name": "Maestro",
+                "Examples": [
+                    {
+                        "ExampleNumber": 1,
+                        "ExampleName": "Trigger a workflow",
+                        "ExampleDescription": "Trigger a workflow",
+                        "LinksToAPIMethod": [
+                            {
+                                "Path": "",
+                                "PathName": "test"
+                            },
+                            {
+                                "Path": "",
+                                "PathName": "test"
+                            }
+                        ],
+                        "ResultsPageText": "Workflow created"
+                    },
+                    {
+                        "ExampleNumber": 2,
+                        "ExampleName": "Cancel a workflow",
+                        "ExampleDescription": "Cancel a workflow",
+                        "LinksToAPIMethod": [
+                            {
+                                "Path": "",
+                                "PathName": "test"
+                            },
+                            {
+                                "Path": "",
+                                "PathName": "test"
+                            }
+                        ],
+                        "ResultsPageText": "Workflow canceled"
+                    },
+                    {
+                        "ExampleNumber": 3,
+                        "ExampleName": "Get status of a workflow",
+                        "ExampleDescription": "Get status of a workflow",
+                        "LinksToAPIMethod": [
+                            {
+                                "Path": "",
+                                "PathName": "test"
+                            },
+                            {
+                                "Path": "",
+                                "PathName": "test"
+                            }
+                        ],
+                        "ResultsPageText": "Workflow status"
+                    }
+                ]
+            }
+        ]
+    },
       {
          "Name":"Rooms",
          "Groups":[
