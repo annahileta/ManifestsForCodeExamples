@@ -1945,6 +1945,27 @@
                                 "PathName": "test"
                             }
                         ],
+                        "Forms": [
+                            {
+                                "Inputs": [
+                                    {
+                                        "InputName": "Instance name"
+                                    },
+                                    {
+                                        "InputName": "Signer email"
+                                    },
+                                    {
+                                        "InputName": "Signer name"
+                                    },
+                                    {
+                                        "InputName": "CC email"
+                                    },
+                                    {
+                                        "InputName": "CC name"
+                                    }
+                                ]
+                            }
+                        ],
                         "ResultsPageText": "Workflow created"
                     },
                     {
