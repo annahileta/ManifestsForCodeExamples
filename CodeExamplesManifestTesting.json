@@ -1974,7 +1974,19 @@
                                 "PathName": "WorkflowInstanceManagement::CancelWorkflowInstance"
                             }
                         ],
-                        "RedirectsToOtherCodeExamples":[
+                        "Forms": [
+                            {
+                                "Inputs": [
+                                    {
+                                        "InputName": "Workflow ID"
+                                    },
+                                    {
+                                        "InputName": "Instance ID"
+                                    }
+                                ]
+                            }
+                        ],
+                        "RedirectsToOtherCodeExamples": [
                            {
                               "CodeExampleToRedirectTo": 1,
                               "RedirectText":"<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
@@ -1992,7 +2004,19 @@
                                 "PathName": "WorkflowInstanceManagement::CancelWorkflowInstance"
                             }
                         ],
-                        "RedirectsToOtherCodeExamples":[
+                        "Forms": [
+                            {
+                                "Inputs": [
+                                    {
+                                        "InputName": "Workflow ID"
+                                    },
+                                    {
+                                        "InputName": "Instance ID"
+                                    }
+                                ]
+                            }
+                        ],
+                        "RedirectsToOtherCodeExamples": [
                            {
                               "CodeExampleToRedirectTo": 1,
                               "RedirectText":"<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
