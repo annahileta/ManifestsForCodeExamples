@@ -1933,16 +1933,12 @@
                 "Examples": [
                     {
                         "ExampleNumber": 1,
-                        "ExampleName": "Trigger a workflow",
+                        "ExampleName": "How to trigger a Maestro workflow",
                         "ExampleDescription": "Trigger a workflow",
                         "LinksToAPIMethod": [
                             {
                                 "Path": "",
-                                "PathName": "test"
-                            },
-                            {
-                                "Path": "",
-                                "PathName": "test"
+                                "PathName": "WorkflowManagement::GetWorkflowDefinition"
                             }
                         ],
                         "Forms": [
@@ -1966,39 +1962,43 @@
                                 ]
                             }
                         ],
-                        "ResultsPageText": "Workflow created"
+                        "ResultsPageText": "Workflow instance is created. Please check your email to complete the workflow."
                     },
                     {
                         "ExampleNumber": 2,
-                        "ExampleName": "Cancel a workflow",
+                        "ExampleName": "How to cancel a Maestro workflow instance",
                         "ExampleDescription": "Cancel a workflow",
                         "LinksToAPIMethod": [
                             {
                                 "Path": "",
-                                "PathName": "test"
-                            },
-                            {
-                                "Path": "",
-                                "PathName": "test"
+                                "PathName": "WorkflowInstanceManagement::CancelWorkflowInstance"
                             }
                         ],
-                        "ResultsPageText": "Workflow canceled"
+                        "RedirectsToOtherCodeExamples":[
+                           {
+                              "CodeExampleToRedirectTo": 1,
+                              "RedirectText":"<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
+                           }
+                        ],
+                        "ResultsPageText": "Workflow instance {0} was canceled."
                     },
                     {
                         "ExampleNumber": 3,
-                        "ExampleName": "Get status of a workflow",
+                        "ExampleName": "How to get the status of a Maestro workflow instance",
                         "ExampleDescription": "Get status of a workflow",
                         "LinksToAPIMethod": [
                             {
                                 "Path": "",
-                                "PathName": "test"
-                            },
-                            {
-                                "Path": "",
-                                "PathName": "test"
+                                "PathName": "WorkflowInstanceManagement::CancelWorkflowInstance"
                             }
                         ],
-                        "ResultsPageText": "Workflow status"
+                        "RedirectsToOtherCodeExamples":[
+                           {
+                              "CodeExampleToRedirectTo": 1,
+                              "RedirectText":"<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
+                           }
+                        ],
+                        "ResultsPageText": "Workflow instance state: {0}"
                     }
                 ]
             }
