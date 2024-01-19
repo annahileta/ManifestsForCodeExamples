@@ -13,6 +13,7 @@
       "ChangeAPITypeButton":"Change API Type",
       "WelcomeText":"Welcome {0} (Account: {1})",
       "CFRError":"This example is not compatible with your CFR Part 11 account. Please return to the homepage to run one of the examples that is compatible or authenticate with a different account.",
+      "ContactSupportToEnableFeature": "Please contact <a href=\"https://support.docusign.com/\">support</a> to enable {0} in your account",
       "LoginPage":{
          "LoginHeader":"<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
          "LoginButton":"Authenticate with DocuSign",
@@ -1962,6 +1963,12 @@
                                 ]
                             }
                         ],
+                        "RedirectsToOtherCodeExamples": [
+                            {
+                                "CodeExampleToRedirectTo": 8,
+                                "RedirectText": "<p>Prerequisite: Please first create a template to use in the workflow using <a {0}>Create a template</a></p>"
+                            }
+                        ],
                         "ResultsPageText": "Workflow instance is created. Please check your email to complete the workflow."
                     },
                     {
@@ -1987,10 +1994,10 @@
                             }
                         ],
                         "RedirectsToOtherCodeExamples": [
-                           {
-                              "CodeExampleToRedirectTo": 1,
-                              "RedirectText":"<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
-                           }
+                            {
+                                "CodeExampleToRedirectTo": 1,
+                                "RedirectText": "<p>Error: No in progress workflow instance found, please <a {0}>trigger a workflow</a></p>"
+                            }
                         ],
                         "ResultsPageText": "Workflow instance {0} was canceled."
                     },
@@ -2017,10 +2024,10 @@
                             }
                         ],
                         "RedirectsToOtherCodeExamples": [
-                           {
-                              "CodeExampleToRedirectTo": 1,
-                              "RedirectText":"<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
-                           }
+                            {
+                                "CodeExampleToRedirectTo": 1,
+                                "RedirectText": "<p>Error: No workflow instance found, please <a {0}>trigger a workflow</a></p>"
+                            }
                         ],
                         "ResultsPageText": "Workflow instance state: {0}"
                     }
