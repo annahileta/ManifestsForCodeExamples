@@ -1969,6 +1969,12 @@
                                 "RedirectText": "<p>Prerequisite: Please first create a template to use in the workflow using <a {0}>Create a template</a></p>"
                             }
                         ],
+                        "CustomErrorTexts":[
+                           {
+                              "ErrorMessageCheck":"NO_ACTIVE_WORKFLOW_FOUND",
+                              "ErrorMessage":"<p>Problem: No active workflow found. Please create a new workflow and publish it on your <a href=\"https://apps-d.docusign.com/\">DocuSign account page</a></p>"
+                           }
+                        ],
                         "ResultsPageText": "Workflow instance is created. Please check your email to complete the workflow."
                     },
                     {
