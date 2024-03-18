@@ -1975,6 +1975,12 @@
                               "ErrorMessage":"<p>Problem: No active workflow found. Please create a new workflow and publish it on your <a href=\"https://apps-d.docusign.com/\">DocuSign account page</a></p>"
                            }
                         ],
+                        "AdditionalPage": [
+                           {
+                              "Name": "publish_workflow",
+                              "ResultsPageText": "Please open <a href=\"{0}\" target=\"_blank\">the following page</a> to publish the workflow."
+                           }
+                        ],
                         "ResultsPageText": "Workflow instance is created. Please check your email to complete the workflow."
                     },
                     {
