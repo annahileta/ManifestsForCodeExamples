@@ -184,6 +184,9 @@
                               {
                                  "InputName":"Start Date",
                                  "InputPlaceholder":"mm/dd/yyyy"
+                              },
+                              {
+                                 "InputName":"RSUs"
                               }
                            ]
                         }
