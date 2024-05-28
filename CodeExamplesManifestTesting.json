@@ -2712,8 +2712,7 @@
                            ]
                         }
                      ],
-                     "ResultsPageText":"Results from DataDeletion:redactIndividualMembershipData method:",
-                     "SkipForLanguages":"java"
+                     "ResultsPageText":"Results from DataDeletion:redactIndividualMembershipData method:"
                   },
                   {
                      "ExampleNumber":11,
@@ -2735,8 +2734,7 @@
                            ]
                         }
                      ],
-                     "ResultsPageText":"Results from DataDeletion:redactIndividualUserData method:",
-                     "SkipForLanguages":"java"
+                     "ResultsPageText":"Results from DataDeletion:redactIndividualUserData method:"
                   },
                   {
                      "ExampleNumber":12,
