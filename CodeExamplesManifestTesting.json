@@ -14,6 +14,7 @@
       "WelcomeText":"Welcome {0} (Account: {1})",
       "CFRError":"This example is not compatible with your CFR Part 11 account. Please return to the homepage to run one of the examples that is compatible or authenticate with a different account.",
       "ContactSupportToEnableFeature": "Please contact <a href=\"https://support.docusign.com/\">support</a> to enable {0} in your account",
+      "RecipientShouldDifferFromSender": "For recipient authentication you must specify a different recipient from the account owner (sender) in order to ensure recipient authentication is performed",
       "LoginPage":{
          "LoginHeader":"<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
          "LoginButton":"Authenticate with DocuSign",
