@@ -1522,7 +1522,7 @@
                      "CFREnabled":"AllAccounts",
                      "ExampleName":"Send an envelope with ID Verification Authentication",
                      "ExampleDescription":"Submit an envelope that requires verification of a government issued identity.",
-                     "Notes":"<b>Note:<b/> The access code for this example is the Signer Name.",
+                     "Notes":"<b>Note:</b> The access code for this example is the Signer Name.",
                      "LinksToAPIMethod":[
                         {
                            "Path":"https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
