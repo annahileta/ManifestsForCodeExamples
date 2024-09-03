@@ -2775,6 +2775,40 @@
                         }
                      ],
                      "ResultsPageText":"Results from AccountCloning::cloneAssetGroupAccount method:"
+                  },
+                  {
+                     "ExampleNumber": 13,
+                     "ExampleName": "Create an account",
+                     "ExampleDescription": "Creates a new eSignature account in your organization.",
+                     "LinksToAPIMethod": [
+                        {
+                           "Path": "https://developers.docusign.com/docs/admin-api/reference/",
+                           "PathName": "ProvisionAssetGroup::getOrganizationPlanItems"
+                        },
+                        {
+                           "Path": "https://developers.docusign.com/docs/admin-api/reference/",
+                           "PathName": "ProvisionAssetGroup::createAssetGroupAccount"
+                        }
+                     ],
+                     "Forms": [
+                        {
+                           "Inputs": [
+                              {
+                                 "InputName": "Account email",
+                                 "InputPlaceholder": ""
+                              },
+                              {
+                                 "InputName": "Account first name",
+                                 "InputPlaceholder": "Pat"
+                              },
+                              {
+                                 "InputName": "Account last name",
+                                 "InputPlaceholder": "Johnson"
+                              }
+                           ]
+                        }
+                     ],
+                     "ResultsPageText": "Results from ProvisionAssetGroup::createAssetGroupAccount method:"
                   }
                ]
             }
