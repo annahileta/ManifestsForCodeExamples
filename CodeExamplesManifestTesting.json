@@ -2817,6 +2817,28 @@
                ]
             }
          ]
+      },
+      {
+         "Name": "Notary",
+         "Groups": [
+            {
+               "Name": "Notary API",
+               "Examples":[
+                  {
+                     "ExampleNumber": 4,
+                     "ExampleName": "Notary On-Demand",
+                     "ExampleDescription": "Demonstrates how to send an envelope with a third-party notary service.",
+                     "LinksToAPIMethod":[
+                        {
+                           "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                           "PathName": "Envelopes:create"
+                        }
+                     ],
+                     "ResultsPageText": "Results from Envelopes:create method:"
+                  }
+               ]
+            }
+         ]
       }
    ]
 }
