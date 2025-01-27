@@ -2834,6 +2834,20 @@
                            "PathName": "Envelopes:create"
                         }
                      ],
+                     "Forms": [
+                        {
+                           "Inputs": [
+                              {
+                                 "InputName": "Signer Email",
+                                 "InputPlaceholder": "pat@example.com"
+                              },
+                              {
+                                 "InputName": "Signer Name",
+                                 "InputPlaceholder": "Pat Johnson"
+                              }
+                           ]
+                        }
+                     ],
                      "ResultsPageText": "Results from Envelopes:create method:"
                   }
                ]
