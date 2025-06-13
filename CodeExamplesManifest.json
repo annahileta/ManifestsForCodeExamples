@@ -42,6 +42,34 @@
   },
   "APIs": [
     {
+       "Name": "Navigator",
+       "Groups": [
+          {
+             "Name": "Navigator",
+             "Examples":[
+                {
+                   "ExampleNumber": 1,
+                   "ExampleName": "List agreements",
+                   "ExampleDescription": "Demonstrates how to get a list of agreements with the Navigator API",
+                   "LinksToAPIMethod":[
+                      {
+                         "Path":"https://developers.docusign.com/docs/navigator-api/reference/navigator/agreements/getagreementslist/",
+                         "PathName":"Agreements:getAgreementsList"
+                      }
+                   ],
+                   "Forms": [
+                      {
+                         "Inputs": [
+                         ]
+                      }
+                   ],
+                   "ResultsPageText": "List of agreements with the Navigator API:"
+                }
+             ]
+          }
+       ]
+    },
+    {
       "Name": "eSignature",
       "Groups": [
         {
