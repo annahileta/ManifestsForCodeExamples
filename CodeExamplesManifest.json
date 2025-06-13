@@ -57,13 +57,28 @@
                          "PathName":"Agreements:getAgreementsList"
                       }
                    ],
+                   "ResultsPageText": "List of agreements with the Navigator API:"
+                },
+                {
+                   "ExampleNumber": 2,
+                   "ExampleName": "Get single agreement",
+                   "ExampleDescription": "Demonstrates how to get a specific agreement with the Navigator API",
+                   "LinksToAPIMethod":[
+                      {
+                         "Path":"https://developers.docusign.com/docs/navigator-api/reference/navigator/agreements/getagreement/",
+                         "PathName":"Agreements:getAgreement"
+                      }
+                   ],
                    "Forms": [
                       {
                          "Inputs": [
+                           {
+                              "InputName": "Please select an agreement:",
+                            },
                          ]
                       }
                    ],
-                   "ResultsPageText": "List of agreements with the Navigator API:"
+                   "ResultsPageText": "Details for selected agreement:"
                 }
              ]
           }
