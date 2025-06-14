@@ -97,9 +97,11 @@
                            }
                         ],
                         "ResultsPageText": "Workflow instance is created. Please check your email to complete the workflow."
-                    },
-                ],
-                  },
+                    }
+                ]
+                  }
+        ]
+    },
     {
        "Name": "Navigator",
        "Groups": [
@@ -132,8 +134,8 @@
                       {
                          "Inputs": [
                            {
-                              "InputName": "Please select an agreement:",
-                            },
+                              "InputName": "Please select an agreement:"
+                            }
                          ]
                       }
                    ],
