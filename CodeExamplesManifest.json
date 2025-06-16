@@ -1,6 +1,6 @@
 {
   "SupportingTexts": {
-    "HomePageText": "Run and explore DocuSign code examples with Authorization Code Grant or JWT Grant authentication",
+    "HomePageText": "Run and explore Docusign code examples with Authorization Code Grant or JWT Grant authentication",
     "ViewSourceFile": "View source file {0} on GitHub.",
     "APIMethodUsed": "API method used:",
     "APIMethodUsedPlural": "API methods used:",
@@ -13,10 +13,12 @@
     "ChangeAPITypeButton": "Change API Type",
     "WelcomeText": "Welcome {0} (Account: {1})",
     "CFRError": "This example is not compatible with your CFR Part 11 account. Please return to the homepage to run one of the examples that is compatible or authenticate with a different account.",
+    "ContactSupportToEnableFeature": "Please contact <a href=\"https://support.docusign.com/\">support</a> to enable {0} in your account",
+    "IdenticalEmailsNotAllowedErrorMessage": "For recipient authentication you must specify a different recipient from the account owner (sender) in order to ensure recipient authentication is performed",
     "LoginPage": {
-      "LoginHeader": "<h1 class='display-4'>Please Authenticate with DocuSign</h1><label for='auth_type'>Please choose your authentication type</label>",
-      "LoginButton": "Authenticate with DocuSign",
-      "LoginHelperText": "You need to authenticate with DocuSign to continue your request."
+      "LoginHeader": "<h1 class='display-4'>Please Authenticate with Docusign</h1><label for='auth_type'>Please choose your authentication type</label>",
+      "LoginButton": "Authenticate with Docusign",
+      "LoginHelperText": "You need to authenticate with Docusign to continue your request."
     },
     "SelectAPIPage": {
       "SelectAPIHeader": "<h1 class='display-4'>Please choose an API type</h1><label for='api_type'>Please choose an API type</label>",
@@ -30,8 +32,8 @@
       "CountryCodeText": "The country code for the phone number below.",
       "ChooseDateInTheFuture": "Please choose a future date.",
       "PhoneNumberWillBeNotified": "This phone number will receive a notification.",
-      "DynamicContentValue": "Provide values for the dynamic content fields shown on the clickwrap agreement.",
-      "DynamicContentNote": "Note: The clickwrap must be manually modified through the Clickwraps UI to include these dynamic content fields.",
+      "DynamicContentValue": "Provide values for the dynamic content fields shown on the elastic template agreement.",
+      "DynamicContentNote": "Note: The elastic template must be manually modified through the elastic templates UI to include these dynamic content fields.",
       "EmbedClickwrapURL": "Agreement URL returned in the JSON response:",
       "NOTAGREED": "NOT AGREED",
       "AGREED": "AGREED",
@@ -42,163 +44,10 @@
   },
   "APIs": [
     {
-        "Name": "Maestro",
-        "Groups": [
-            {
-                "Name": "Maestro",
-                "Examples": [
-                    {
-                        "ExampleNumber": 1,
-                        "ExampleName": "How to trigger a Maestro workflow",
-                        "ExampleDescription": "Trigger a workflow",
-                        "LinksToAPIMethod": [
-                            {
-                                "Path": "",
-                                "PathName": "WorkflowManagement::GetWorkflowDefinition"
-                            }
-                        ],
-                        "Forms": [
-                            {
-                                "Inputs": [
-                                    {
-                                        "InputName": "Instance name"
-                                    },
-                                    {
-                                        "InputName": "Signer email"
-                                    },
-                                    {
-                                        "InputName": "Signer name"
-                                    },
-                                    {
-                                        "InputName": "CC email"
-                                    },
-                                    {
-                                        "InputName": "CC name"
-                                    }
-                                ]
-                            }
-                        ],
-                        "RedirectsToOtherCodeExamples": [
-                            {
-                                "CodeExampleToRedirectTo": 8,
-                                "RedirectText": "<p>Prerequisite: Please first create a template to use in the workflow using <a {0}>Create a template</a></p>"
-                            }
-                        ],
-                        "CustomErrorTexts":[
-                           {
-                              "ErrorMessageCheck":"NO_ACTIVE_WORKFLOW_FOUND",
-                              "ErrorMessage":"<p>Problem: No active workflow found. Please create a new workflow and publish it on your <a href=\"https://apps-d.docusign.com/\">DocuSign account page</a></p>"
-                           }
-                        ],
-                        "AdditionalPage": [
-                           {
-                              "Name": "publish_workflow",
-                              "ResultsPageText": "Please open <a href=\"{0}\" target=\"_blank\">the following page</a> to publish the workflow."
-                           }
-                        ],
-                        "ResultsPageText": "Workflow instance is created. Please check your email to complete the workflow."
-                    }
-                ]
-                  }
-        ]
-    },
-    {
-       "Name": "Navigator",
-       "Groups": [
-          {
-             "Name": "Navigator",
-             "Examples":[
-                {
-                   "ExampleNumber": 1,
-                   "ExampleName": "List agreements",
-                   "ExampleDescription": "Demonstrates how to get a list of agreements with the Navigator API",
-                   "LinksToAPIMethod":[
-                      {
-                         "Path":"https://developers.docusign.com/docs/navigator-api/reference/navigator/agreements/getagreementslist/",
-                         "PathName":"Agreements:getAgreementsList"
-                      }
-                   ],
-                   "ResultsPageText": "List of agreements with the Navigator API:"
-                },
-                {
-                   "ExampleNumber": 2,
-                   "ExampleName": "Get single agreement",
-                   "ExampleDescription": "Demonstrates how to get a specific agreement with the Navigator API",
-                   "LinksToAPIMethod":[
-                      {
-                         "Path":"https://developers.docusign.com/docs/navigator-api/reference/navigator/agreements/getagreement/",
-                         "PathName":"Agreements:getAgreement"
-                      }
-                   ],
-                   "Forms": [
-                      {
-                         "Inputs": [
-                           {
-                              "InputName": "Please select an agreement:"
-                            }
-                         ]
-                      }
-                   ],
-                   "ResultsPageText": "Details for selected agreement:"
-                }
-             ]
-          }
-       ]
-    },
-    {
-         "Name": "ConnectedFields",
-         "Groups": [
-            {
-               "Name": "Connected Fields",
-               "Examples":[
-                  {
-                     "ExampleNumber": 1,
-                     "ExampleName": "Set connected fields",
-                     "ExampleDescription": "Demonstrates how to use an extension app to verify the fields in the document.",
-                     "LinksToAPIMethod":[
-                        {
-                           "Path":"https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                           "PathName":"Envelopes:create"
-                        }
-                     ],
-                     "Forms": [
-                        {
-                           "Inputs": [
-                              {
-                                 "InputName": "Signer Email",
-                                 "InputPlaceholder": "pat@example.com"
-                              },
-                              {
-                                 "InputName": "Signer Name",
-                                 "InputPlaceholder": "Pat Johnson"
-                              },
-                              {
-                                 "InputName": "Extension app for verification"
-                              }
-                           ]
-                        }
-                     ],
-                     "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}.!<br />When signing the envelope, ensure the connection to your data verification extension app is active.",
-                     "AdditionalPage":[
-                        {
-                           "Name":"no_verification_app",
-                           "ResultsPageText":"No data verification were found in the account. Please install a data verification app.<br />You can install a phone number verification extension app by copying the following link to your browser: <a href=\"https://apps.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04\">https://apps.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04</a>"
-                        },
-                        {
-                           "Name":"no_verification_app",
-                           "ResultsPageText":"No data verification were found in the account. Please install a data verification app.<br />You can install a phone number verification extension app by copying the following link to your browser: <a href=\"https://apps.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04\">https://apps.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04</a>"
-                        }
-                     ]
-                  }
-               ]
-            }
-         ]
-      },
-    {
       "Name": "eSignature",
       "Groups": [
         {
-          "Name": "Requesting a signature",
+          "Name": "Sending a signature request (remote signing)",
           "Examples": [
             {
               "ExampleNumber": 2,
@@ -234,80 +83,6 @@
                 }
               ],
               "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
-            },
-            {
-              "ExampleNumber": 1,
-              "CFREnabled": "NonCFR",
-              "ExampleName": "Request a signature through your app (embedded signing)",
-              "ExampleDescription": "Sends an envelope, then uses embedded signing for the first signer. With embedded signing, DocuSign signing is initiated from your website.",
-              "LinksToAPIMethod": [
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                  "PathName": "Envelopes:create"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
-                  "PathName": "EnvelopeViews:createRecipient"
-                }
-              ],
-              "Forms": [
-                {
-                  "Inputs": [
-                    {
-                      "InputName": "Signer Email",
-                      "InputPlaceholder": "pat@example.com"
-                    },
-                    {
-                      "InputName": "Signer Name",
-                      "InputPlaceholder": "Pat Johnson"
-                    }
-                  ]
-                }
-              ],
-              "ResultsPageText": ""
-            },
-            {
-              "ExampleNumber": 41,
-              "CFREnabled": "CFROnly",
-              "ExampleName": "Request a signature through your app (embedded signing) with a CFR Part 11 account",
-              "ExampleDescription": "Sends an envelope, then uses embedded signing with recipient authentication by phone for the first signer. With embedded signing, DocuSign signing is initiated from your website.",
-              "LinksToAPIMethod": [
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeworkflowdefinition/getenvelopeworkflowdefinition/",
-                  "PathName": "EnvelopeWorkflowDefinition:getEnvelopeWorkflowDefinition"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                  "PathName": "Envelopes:create"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
-                  "PathName": "EnvelopeViews:createRecipient"
-                }
-              ],
-              "Forms": [
-                {
-                  "Inputs": [
-                    {
-                      "InputName": "Signer Email",
-                      "InputPlaceholder": "pat@example.com"
-                    },
-                    {
-                      "InputName": "Signer Name",
-                      "InputPlaceholder": "Pat Johnson"
-                    },
-                    {
-                      "InputName": "Signer Country Code",
-                      "InputPlaceholder": "1"
-                    },
-                    {
-                      "InputName": "Signer Phone Number",
-                      "InputPlaceholder": "415-555-1212"
-                    }
-                  ]
-                }
-              ],
-              "ResultsPageText": ""
             },
             {
               "ExampleNumber": 9,
@@ -350,6 +125,205 @@
                 }
               ],
               "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
+            },
+            {
+              "ExampleNumber": 42,
+              "CFREnabled": "NonCFR",
+              "ExampleName": "Request a signature by email with document generation",
+              "ExampleDescription": "Creates an envelope from a template with a document that is dynamically generated to include all the customized data specified by the sender.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templates/create/",
+                  "PathName": "Templates:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templatedocuments/update/",
+                  "PathName": "TemplateDocuments:update"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templaterecipienttabs/create/",
+                  "PathName": "TemplateRecipientTabs:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/documentgeneration/getenvelopedocgenformfields/",
+                  "PathName": "DocumentGeneration:getEnvelopeDocGenFormFields"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/documentgeneration/updateenvelopedocgenformfields/",
+                  "PathName": "DocumentGeneration:updateEnvelopeDocGenFormFields"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
+                  "PathName": "Envelopes:update"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Candidate Email",
+                      "InputPlaceholder": "pat@example.com"
+                    },
+                    {
+                      "InputName": "Candidate Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "Manager Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "Job Title"
+                    },
+                    {
+                      "InputName": "Salary"
+                    },
+                    {
+                      "InputName": "Start Date",
+                      "InputPlaceholder": "mm/dd/yyyy"
+                    },
+                    {
+                      "InputName": "RSUs"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
+            },
+            {
+              "ExampleNumber": 37,
+              "CFREnabled": "NonCFR",
+              "ExampleName": "Request a signature by SMS or WhatsApp delivery",
+              "ExampleDescription": "Sends a signature request via an SMS or WhatsApp message.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes::create"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer Country Code",
+                      "InputPlaceholder": "1"
+                    },
+                    {
+                      "InputName": "Signer Phone Number",
+                      "InputPlaceholder": "4155551212"
+                    },
+                    {
+                      "InputName": "Signer Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "CC Country Code",
+                      "InputPlaceholder": "1"
+                    },
+                    {
+                      "InputName": "CC Phone Number",
+                      "InputPlaceholder": "4155551212"
+                    },
+                    {
+                      "InputName": "CC Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "Delivery Method:"
+                    },
+                    {
+                      "InputName": "SMS"
+                    },
+                    {
+                      "InputName": "WhatsApp"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
+            }
+          ]
+        },
+        {
+          "Name": "Hosting the signing experience (embedded signing)",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "CFREnabled": "NonCFR",
+              "ExampleName": "Request a signature through your app (embedded signing)",
+              "ExampleDescription": "Sends an envelope, then uses embedded signing for the first signer. With embedded signing, Docusign signing is initiated from your website.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
+                  "PathName": "EnvelopeViews:createRecipient"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer Email",
+                      "InputPlaceholder": "pat@example.com"
+                    },
+                    {
+                      "InputName": "Signer Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": ""
+            },
+            {
+              "ExampleNumber": 41,
+              "CFREnabled": "CFROnly",
+              "ExampleName": "Request a signature through your app (embedded signing) with a CFR Part 11 account",
+              "ExampleDescription": "Sends an envelope, then uses embedded signing with recipient authentication by phone for the first signer. With embedded signing, Docusign signing is initiated from your website.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeworkflowdefinition/getenvelopeworkflowdefinition/",
+                  "PathName": "EnvelopeWorkflowDefinition:getEnvelopeWorkflowDefinition"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
+                  "PathName": "EnvelopeViews:createRecipient"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer Email",
+                      "InputPlaceholder": "pat@example.com"
+                    },
+                    {
+                      "InputName": "Signer Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "Signer Country Code",
+                      "InputPlaceholder": "1"
+                    },
+                    {
+                      "InputName": "Signer Phone Number",
+                      "InputPlaceholder": "4155551212"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": ""
             },
             {
               "ExampleNumber": 13,
@@ -404,54 +378,70 @@
               "ResultsPageText": ""
             },
             {
-              "ExampleNumber": 37,
+              "ExampleNumber": 44,
               "CFREnabled": "NonCFR",
-              "ExampleName": "Request a signature by SMS delivery",
-              "ExampleDescription": "Sends a signature request via an SMS message.",
+              "ExampleName": "Request a signature using focused view",
+              "ExampleDescription": "Sends an envelope, then uses focused view for the signer.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                  "PathName": "Envelopes::create"
+                  "PathName": "Envelopes:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
+                  "PathName": "EnvelopeViews:createRecipient"
                 }
               ],
               "Forms": [
                 {
                   "Inputs": [
                     {
-                      "InputName": "Signer Country Code",
-                      "InputPlaceholder": "1"
-                    },
-                    {
-                      "InputName": "Signer Phone Number",
-                      "InputPlaceholder": "415-555-1212"
+                      "InputName": "Signer Email",
+                      "InputPlaceholder": "pat@example.com"
                     },
                     {
                       "InputName": "Signer Name",
-                      "InputPlaceholder": "Pat Johnson"
-                    },
-                    {
-                      "InputName": "CC Country Code",
-                      "InputPlaceholder": "1"
-                    },
-                    {
-                      "InputName": "CC Phone Number",
-                      "InputPlaceholder": "415-555-1212"
-                    },
-                    {
-                      "InputName": "CC Name",
                       "InputPlaceholder": "Pat Johnson"
                     }
                   ]
                 }
               ],
-              "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
+              "ResultsPageText": "The document has been embedded with focused view.",
+              "SkipForLanguages": "bash;powershell"
+            },
+            {
+              "ExampleNumber": 39,
+              "CFREnabled": "NonCFR",
+              "ExampleName": "Send an envelope to an In Person Signer",
+              "ExampleDescription": "Demonstrates how to host an In Person Signing session with embedded signing.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
+                  "PathName": "EnvelopeViews:createRecipient"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": ""
             },
             {
               "ExampleNumber": 14,
               "CFREnabled": "NonCFR",
               "ExampleName": "Send an envelope with an order form and payment field",
               "ExampleDescription": "Anchor text (<a target='_blank' href=\"https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/tabs/auto-place/\">AutoPlace</a>) is used to position the fields in the documents.",
-              "Notes": "<h5 style=\"color: purple;\">Note: This example will only work if the sender's DocuSign account is set up with a DocuSign payment gateway. Since the Payment Gateway ID is set in the configuration file, you will need to run your own instance of this project to set it.</h5>",
+              "Notes": "<h5 style=\"color: purple;\">Note: This example will only work if the sender's Docusign account is set up with a Docusign payment gateway. Since the Payment Gateway ID is set in the configuration file, you will need to run your own instance of this project to set it.</h5>",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
@@ -490,103 +480,11 @@
                 }
               ],
               "ResultsPageText": "The envelope has been created and sent!<br/>Envelope ID {0}."
-            },
-            {
-              "ExampleNumber": 39,
-              "CFREnabled": "NonCFR",
-              "ExampleName": "Send an envelope to an In Person Signer",
-              "ExampleDescription": "Demonstrates how to host an In Person Signing session with embedded signing.",
-              "LinksToAPIMethod": [
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                  "PathName": "Envelopes:create"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createrecipient/",
-                  "PathName": "EnvelopeViews:createRecipient"
-                }
-              ],
-              "Forms": [
-                {
-                  "Inputs": [
-                    {
-                      "InputName": "Signer Name",
-                      "InputPlaceholder": "Pat Johnson"
-                    }
-                  ]
-                }
-              ],
-              "ResultsPageText": ""
-            },
-            {
-              "ExampleNumber": 42,
-              "CFREnabled": "NonCFR",
-              "ExampleName": "Request a signature by email with document generation",
-              "ExampleDescription": "Creates an envelope from a template with a document that is dynamically generated to include all the customized data specified by the sender.",
-              "LinksToAPIMethod": [
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templates/create/",
-                  "PathName": "Templates:create"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templatedocuments/update/",
-                  "PathName": "TemplateDocuments:update"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/templates/templaterecipienttabs/create/",
-                  "PathName": "TemplateRecipientTabs:create"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
-                  "PathName": "Envelopes:create"
-                },
-                {
-                  "Path": "",
-                  "PathName": "DocGenFormFields:get"
-                },
-                {
-                  "Path": "",
-                  "PathName": "DocGenFormFields:update"
-                },
-                {
-                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
-                  "PathName": "Envelopes:update"
-                }
-              ],
-              "Forms": [
-                {
-                  "Inputs": [
-                    {
-                      "InputName": "Candidate Email",
-                      "InputPlaceholder": "pat@example.com"
-                    },
-                    {
-                      "InputName": "Candidate Name",
-                      "InputPlaceholder": "Pat Johnson"
-                    },
-                    {
-                      "InputName": "Manager Name",
-                      "InputPlaceholder": "Pat Johnson"
-                    },
-                    {
-                      "InputName": "Job Title"
-                    },
-                    {
-                      "InputName": "Salary"
-                    },
-                    {
-                      "InputName": "Start Date",
-                      "InputPlaceholder": "mm/dd/yyyy"
-                    }
-                  ]
-                }
-              ],
-              "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
             }
           ]
         },
         {
-          "Name": "Working with envelopes and templates",
+          "Name": "Using envelopes and templates",
           "Examples": [
             {
               "ExampleNumber": 4,
@@ -670,7 +568,7 @@
               "ExampleNumber": 11,
               "CFREnabled": "AllAccounts",
               "ExampleName": "Embedded sending",
-              "ExampleDescription": "An envelope will be created in draft mode. The DocuSign web tool (NDSE) will then be shown, enabling further updates to the envelope before it is sent.",
+              "ExampleDescription": "An envelope will be created in draft mode. The Docusign web tool (NDSE) will then be shown, enabling further updates to the envelope before it is sent.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
@@ -789,7 +687,7 @@
           ]
         },
         {
-          "Name": "Working with advanced recipient routing",
+          "Name": "Using advanced recipient routing",
           "Examples": [
             {
               "ExampleNumber": 32,
@@ -1023,7 +921,7 @@
           ]
         },
         {
-          "Name": "Working with documents",
+          "Name": "Using documents",
           "Examples": [
             {
               "ExampleNumber": 6,
@@ -1086,7 +984,7 @@
               "ExampleNumber": 10,
               "CFREnabled": "AllAccounts",
               "ExampleName": "Send an envelope using binary document transfer",
-              "ExampleDescription": "<p>The envelope includes a pdf, Word, and HTML document.</p><p>Multipart data transfer is used to send the documents in binary format to DocuSign. Binary transfer is 33% more efficient than base64 encoding and is recommended for documents over 15M Bytes. Binary transfer is not yet supported by the SDK.</p>",
+              "ExampleDescription": "<p>The envelope includes a pdf, Word, and HTML document.</p><p>Multipart data transfer is used to send the documents in binary format to Docusign. Binary transfer is 33% more efficient than base64 encoding and is recommended for documents over 15M Bytes. Binary transfer is not yet supported by the SDK.</p>",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
@@ -1170,7 +1068,7 @@
               "CustomErrorTexts": [
                 {
                   "ErrorMessageCheck": "ACCOUNT_LACKS_PERMISSIONS",
-                  "ErrorMessage": "See <a href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/set-document-visibility\"> How to set document visibility for envelope recipients</a> in the DocuSign Developer Center for instructions on how to enable document visibility in your developer account."
+                  "ErrorMessage": "See <a href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/set-document-visibility\"> How to set document visibility for envelope recipients</a> in the Docusign Developer Center for instructions on how to enable document visibility in your developer account."
                 }
               ],
               "Forms": [
@@ -1208,7 +1106,7 @@
           ]
         },
         {
-          "Name": "Working with tabs",
+          "Name": "Using tabs",
           "Examples": [
             {
               "ExampleNumber": 15,
@@ -1329,7 +1227,7 @@
           ]
         },
         {
-          "Name": "Working with brands",
+          "Name": "Using brands",
           "Examples": [
             {
               "ExampleNumber": 28,
@@ -1445,7 +1343,7 @@
           ]
         },
         {
-          "Name": "Working with permissions",
+          "Name": "Using permissions",
           "Examples": [
             {
               "ExampleNumber": 24,
@@ -1559,8 +1457,8 @@
             {
               "ExampleNumber": 43,
               "CFREnabled": "AllAccounts",
-              "ExampleName": "Share access to a DocuSign envelope inbox",
-              "ExampleDescription": "Share envelope inbox access with an agent user and view the principal user's envelopes using the Shared Access view in the DocuSign UI",
+              "ExampleName": "Share access to a Docusign envelope inbox",
+              "ExampleDescription": "Share envelope inbox access with an agent user and view the principal user's envelopes using the Shared Access view in the Docusign UI",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/users/users/create/",
@@ -1597,11 +1495,11 @@
               "AdditionalPage": [
                 {
                   "Name": "authenticate_as_agent",
-                  "ResultsPageText": "Please go to the principal's developer account at <a href=\"https://admindemo.docusign.com\" target=\"_blank\">admindemo.docusign.com</a> and log out, then come back to this page and press continue. You will be redirected to the log in page where you should authenticate as the agent user that you just created."
+                  "ResultsPageText": "Please go to the principal's developer account at <a target='_blank' href=\"https://admindemo.docusign.com\">admindemo.docusign.com</a> and log out, then come back to this page and press continue. You will be redirected to the log in page where you should authenticate as the agent user that you just created."
                 },
                 {
                   "Name": "list_status_successful",
-                  "ResultsPageText": "<p>Go to the <a href=\"https://appdemo.docusign.com/documents\" target=\"_blank\">Manage</a> tab in the agent's DocuSign developer account, select shared access in the upper left, then select the principal's account to view the principal's envelopes. For details, see <a href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/shared-access/#step-4-expected-response\" target=\"_blank\">How to share access to a DocuSign inbox</a>.</p><p>Results from Envelopes:listStatus method:</p>"
+                  "ResultsPageText": "<p>Go to the <a href=\"https://appdemo.docusign.com/documents\">Manage</a> tab in the agent's Docusign developer account, select shared access in the upper left, then select the principal's account to view the principal's envelopes. For details, see <a target='_blank' href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/shared-access/#step-4-expected-response\">How to share access to a Docusign inbox</a>.</p><p>Results from Envelopes:listStatus method:</p>"
                 },
                 {
                   "Name": "list_status_unsuccessful",
@@ -1611,19 +1509,20 @@
                   "Name": "user_not_found",
                   "ResultsPageText": "User has not been activated. Please go to the agent's email to activate the agent."
                 }
-              ]
+              ],
+              "SkipForLanguages": "java"
             }
           ]
         },
         {
-          "Name": "Implementing multi-factor recipient (signer) authentication",
+          "Name": "Using multi-factor recipient (signer) authentication",
           "Examples": [
             {
               "ExampleNumber": 23,
               "CFREnabled": "AllAccounts",
               "ExampleName": "Send an envelope with ID Verification Authentication",
               "ExampleDescription": "Submit an envelope that requires verification of a government issued identity.",
-              "Notes": "<p><b>Note:<b/> The access code for this example is the Signer Name.</p>",
+              "Notes": "<b>Note:</b> The access code for this example is the Signer Name.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
@@ -1657,7 +1556,7 @@
               "CFREnabled": "AllAccounts",
               "ExampleName": "Send an envelope with Recipient Knowledged Based Authentication",
               "ExampleDescription": "Submit an envelope with multiple choice, public records based questions to provide multi-factor authentication.",
-              "Notes": "<p><b>Note:<b/> The access code for this example is the Signer Name.</p>",
+              "Notes": "<b>Note:</b> The access code for this example is the Signer Name.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
@@ -1706,7 +1605,7 @@
                     },
                     {
                       "InputName": "Signer Phone Number",
-                      "InputPlaceholder": "415-555-1212"
+                      "InputPlaceholder": "4155551212"
                     },
                     {
                       "InputName": "Signer Email",
@@ -1755,13 +1654,13 @@
           ]
         },
         {
-          "Name": "Embedded DocuSign web tool",
+          "Name": "Embedded Docusign web tool",
           "Examples": [
             {
               "ExampleNumber": 12,
               "CFREnabled": "AllAccounts",
-              "ExampleName": "Embedded DocuSign web tool",
-              "ExampleDescription": "Redirect the user to the DocuSign web tool.",
+              "ExampleName": "Embedded Docusign web tool",
+              "ExampleDescription": "Redirect the user to the Docusign web tool.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopeviews/createconsole/",
@@ -1797,8 +1696,8 @@
           "Examples": [
             {
               "ExampleNumber": 1,
-              "ExampleName": "Create a clickwrap",
-              "ExampleDescription": "Creates a clickwrap that you can embed in your website or app.",
+              "ExampleName": "Create an elastic template",
+              "ExampleDescription": "Creates an elastic template that you can embed in your website or app.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createclickwrap/",
@@ -1810,17 +1709,17 @@
                   "Inputs": [
                     {
                       "InputName": "Name",
-                      "InputPlaceholder": "Name of the clickwrap"
+                      "InputPlaceholder": "Name of the elastic template"
                     }
                   ]
                 }
               ],
-              "ResultsPageText": "The clickwrap {0} has been created!"
+              "ResultsPageText": "The elastic template {0} has been created!"
             },
             {
               "ExampleNumber": 2,
-              "ExampleName": "Activate a clickwrap",
-              "ExampleDescription": "Activates a new clickwrap that you have already created.",
+              "ExampleName": "Activate an elastic template",
+              "ExampleDescription": "Activates a new elastic template that you have already created.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/updateclickwrapversion",
@@ -1830,25 +1729,25 @@
               "RedirectsToOtherCodeExamples": [
                 {
                   "CodeExampleToRedirectTo": 1,
-                  "RedirectText": "<p>Problem: You do not have an active clickwrap. <a {0}>Create a clickwrap.</a> <br/></p>"
+                  "RedirectText": "<p>Problem: You do not have an active elastic template. <a {0}>Create an elastic template.</a> <br/></p>"
                 }
               ],
               "Forms": [
                 {
-                  "FormName": "<p>Choose a clickwrap to activate</p>",
+                  "FormName": "<p>Choose an elastic template to activate</p>",
                   "Inputs": [
                     {
-                      "InputName": "Clickwrap"
+                      "InputName": "elastic template"
                     }
                   ]
                 }
               ],
-              "ResultsPageText": "The clickwrap has been activated!"
+              "ResultsPageText": "The elastic template has been activated!"
             },
             {
               "ExampleNumber": 6,
-              "ExampleName": "Embed a clickwrap",
-              "ExampleDescription": "Creates a unique URL for an active clickwrap and embeds the clickwrap on your page.",
+              "ExampleName": "Embed an elastic template",
+              "ExampleDescription": "Creates a unique URL for an active elastic template and embeds the elastic template on your page.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createhasagreed/",
@@ -1858,19 +1757,19 @@
               "RedirectsToOtherCodeExamples": [
                 {
                   "CodeExampleToRedirectTo": 1,
-                  "RedirectText": "<p>Problem: You do not have an active clickwrap. <a {0}>Create a clickwrap.</a> <br/></p>"
+                  "RedirectText": "<p>Problem: You do not have an active elastic template. <a {0}>Create an elastic template.</a> <br/></p>"
                 },
                 {
                   "CodeExampleToRedirectTo": 2,
-                  "RedirectText": "<p>Problem: Your clickwrap is inactive. <a {0}>Activate a clickwrap.</a> <br/></p>"
+                  "RedirectText": "<p>Problem: Your elastic template is inactive. <a {0}>Activate an elastic template.</a> <br/></p>"
                 }
               ],
               "Forms": [
                 {
-                  "FormName": "<p>Choose a clickwrap to embed:</p>",
+                  "FormName": "<p>Choose an elastic template to embed:</p>",
                   "Inputs": [
                     {
-                      "InputName": "Clickwrap"
+                      "InputName": "elastic template"
                     },
                     {
                       "InputName": "Full Name"
@@ -1890,12 +1789,12 @@
                   ]
                 }
               ],
-              "ResultsPageText": "See the embedded clickwrap in the dialog box."
+              "ResultsPageText": "See the embedded elastic template in the dialog box."
             },
             {
               "ExampleNumber": 3,
-              "ExampleName": "Create a new clickwrap version",
-              "ExampleDescription": "Creates a new version of a clickwrap.",
+              "ExampleName": "Create a new elastic template version",
+              "ExampleDescription": "Creates a new version of an elastic template.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/createclickwrapversion/",
@@ -1905,7 +1804,7 @@
               "RedirectsToOtherCodeExamples": [
                 {
                   "CodeExampleToRedirectTo": 1,
-                  "RedirectText": "<p>Problem: You do not have an active clickwrap. <a {0}>Create a clickwrap.</a> <br/></p>"
+                  "RedirectText": "<p>Problem: You do not have an active elastic template. <a {0}>Create an elastic template.</a> <br/></p>"
                 }
               ],
               "Forms": [
@@ -1920,12 +1819,12 @@
                   ]
                 }
               ],
-              "ResultsPageText": "Version {0} of clickwrap \"{1}\" has been created."
+              "ResultsPageText": "Version {0} of elastic template \"{1}\" has been created."
             },
             {
               "ExampleNumber": 4,
-              "ExampleName": "Get a list of clickwraps",
-              "ExampleDescription": "Gets a list of clickwraps associated with a specific DocuSign user.",
+              "ExampleName": "Get a list of elastic templates",
+              "ExampleDescription": "Gets a list of elastic templates associated with a specific Docusign user.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/getclickwraps",
@@ -1936,8 +1835,8 @@
             },
             {
               "ExampleNumber": 5,
-              "ExampleName": "Get clickwrap responses",
-              "ExampleDescription": "Gets user responses to your clickwrap agreements.",
+              "ExampleName": "Get elastic template responses",
+              "ExampleDescription": "Gets user responses to your elastic template agreements.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/click-api/reference/accounts/clickwraps/getclickwrapagreements",
@@ -1947,20 +1846,88 @@
               "RedirectsToOtherCodeExamples": [
                 {
                   "CodeExampleToRedirectTo": 1,
-                  "RedirectText": "<p>Problem: You do not have an active clickwrap. <a {0}>Create a clickwrap.</a> <br/></p>"
+                  "RedirectText": "<p>Problem: You do not have an active elastic template. <a {0}>Create an elastic template.</a> <br/></p>"
                 }
               ],
               "Forms": [
                 {
-                  "FormName": "<p>Choose a clickwrap:</p>",
+                  "FormName": "<p>Choose an elastic template:</p>",
                   "Inputs": [
                     {
-                      "InputName": "Clickwrap"
+                      "InputName": "elastic template"
                     }
                   ]
                 }
               ],
               "ResultsPageText": "Results from the ClickWraps::getClickwrapAgreements method:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Connect",
+      "Groups": [
+        {
+          "Name": "Connect examples",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "ExampleName": "Validate HMAC signature",
+              "ExampleDescription": "Demonstrates an example workflow for a client app receiving and validating a webhook (Docusign Connect) message using HMAC security.",
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "HMAC secret"
+                    },
+                    {
+                      "InputName": "Plain text JSON payload"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "This value should match the value of your x-docusign-signature header: <br/>HMAC signature {0}",
+              "SkipForLanguages": "bash;powershell"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "WebForms",
+      "Groups": [
+        {
+          "Name": "Web forms",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "ExampleName": "Create and embed an instance of a web form",
+              "ExampleDescription": "Creates an instance of a web form and embeds it on an HTML page.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "",
+                  "PathName": "WebForms:ListWebForms"
+                },
+                {
+                  "Path": "",
+                  "PathName": "WebForms:CreateInstance"
+                }
+              ],
+              "AdditionalPage": [
+                {
+                  "Name": "create_web_form_template",
+                  "ResultsPageText": "First the launcher will create a new template in your account that will be used to create the web form."
+                },
+                {
+                  "Name": "create_web_form",
+                  "ResultsPageText": "Go to your Docusign account to create the Web Form. Go to 'Templates' in your developer account, select 'Start,' select 'Web Forms,' and choose 'Upload Web Form.' Upload the JSON config file 'web-form-config.json' found under the {0} folder of this project. You will need to activate the web form before proceeding. Press Continue after doing so."
+                },
+                {
+                  "Name": "webforms_heading",
+                  "ResultsPageText": "The webform has been embedded below using the Docusign JS library."
+                }
+              ]
             }
           ]
         }
@@ -1974,15 +1941,15 @@
           "Examples": [
             {
               "ExampleNumber": 1,
-              "ExampleName": "Creating a room with data",
-              "ExampleDescription": "This example creates a room using specified data",
+              "ExampleName": "Create a room with data",
+              "ExampleDescription": "Demonstrates how to create a Docusign room that contains populated data.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/CreateRoom",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/CreateRoom",
                   "PathName": "Rooms::CreateRoom"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Roles/Roles/GetRoles",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Roles/Roles/GetRoles",
                   "PathName": "Roles::GetRoles"
                 }
               ],
@@ -2000,25 +1967,25 @@
             },
             {
               "ExampleNumber": 2,
-              "ExampleName": "Creating a room with a template",
-              "ExampleDescription": "This example creates a room from a template",
+              "ExampleName": "Create a room with a template",
+              "ExampleDescription": "Demonstrates how to create a Docusign room using a predefined template.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/CreateRoom",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/CreateRoom",
                   "PathName": "Rooms::CreateRoom"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/RoomTemplates/RoomTemplates/GetRoomTemplates",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/RoomTemplates/RoomTemplates/GetRoomTemplates",
                   "PathName": "RoomTemplates::GetRoomTemplates"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Roles/Roles/GetRoles",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Roles/Roles/GetRoles",
                   "PathName": "Roles::GetRoles"
                 }
               ],
               "RedirectsToOtherCodeExamples": [
                 {
-                  "RedirectText": "<p>Problem: you don't have any templates. Please first create a form template using <a href='https://demo.rooms.docusign.com/admin/company/roomtemplates' target='_blank'>DocuSign Admin.</a> <br />Thank you.</p>"
+                  "RedirectText": "<p>Problem: you don't have any templates. Please first create a form template using <a href='https://demo.rooms.docusign.com/admin/company/roomtemplates' target='_blank'>Docusign Rooms.</a> <br />Thank you.</p>"
                 }
               ],
               "Forms": [
@@ -2038,15 +2005,15 @@
             },
             {
               "ExampleNumber": 3,
-              "ExampleName": "Exporting data from a room",
-              "ExampleDescription": "This example exports data from a room",
+              "ExampleName": "Export data from a room",
+              "ExampleDescription": "Demonstrates how to export data from a room.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/GetRooms",
                   "PathName": "Rooms::GetRooms"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRoomFieldData",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/GetRoomFieldData",
                   "PathName": "Rooms::GetRoomFieldData"
                 }
               ],
@@ -2069,23 +2036,23 @@
             },
             {
               "ExampleNumber": 4,
-              "ExampleName": "Adding forms to a room",
-              "ExampleDescription": "This example adds form to a room",
+              "ExampleName": "Add a form to a room",
+              "ExampleDescription": "Demonstrates how to attach a form to a room",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/GetRooms",
                   "PathName": "Rooms::GetRooms"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Forms/FormLibraries/GetFormLibraries",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Forms/FormLibraries/GetFormLibraries",
                   "PathName": "Forms::GetFormLibraries"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Forms/FormLibraries/GetFormLibraryForms",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Forms/FormLibraries/GetFormLibraryForms",
                   "PathName": "Forms::GetFormLibraryForms"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/AddFormToRoom",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/AddFormToRoom",
                   "PathName": "Rooms::AddFormToRoom"
                 }
               ],
@@ -2098,7 +2065,7 @@
               "CustomErrorTexts": [
                 {
                   "ErrorMessageCheck": "FORMS_INTEGRATION_NOT_ENABLED",
-                  "ErrorMessage": "<p>Problem: This example is not available.</p><p>DocuSign Forms is not enabled for your DocuSign account. Please contact <a href='mailto:roomssandbox@docusign.com'>DocuSign Rooms Support</a> to enable Forms.</p>"
+                  "ErrorMessage": "<p>Problem: This example is not available.</p><p>Docusign Forms is not enabled for your Docusign account. Please contact <a href='mailto:roomssandbox@docusign.com'>Docusign Rooms Support</a> to enable Forms.</p>"
                 }
               ],
               "Forms": [
@@ -2117,11 +2084,11 @@
             },
             {
               "ExampleNumber": 5,
-              "ExampleName": "Getting rooms with filters",
-              "ExampleDescription": "This example returns rooms by filter",
+              "ExampleName": "Get a room with a filter",
+              "ExampleDescription": "Demonstrates how to return rooms filtered by your parameters.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/GetRooms",
                   "PathName": "Rooms::GetRooms"
                 }
               ],
@@ -2141,11 +2108,11 @@
             },
             {
               "ExampleNumber": 6,
-              "ExampleName": "Creating an external form fill session",
-              "ExampleDescription": "This is an example of creating external form fill session",
+              "ExampleName": "Create and embed an external form fill session",
+              "ExampleDescription": "Demonstrates how to create and embed an external form fill session.",
               "LinksToAPIMethod": [
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Rooms/Rooms/GetRooms",
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Rooms/Rooms/GetRooms",
                   "PathName": "Rooms::GetRooms"
                 },
                 {
@@ -2153,18 +2120,18 @@
                   "PathName": "Rooms::GetDocuments"
                 },
                 {
-                  "Path": "https://developers.docusign.com/rooms-api/reference/Forms/ExternalFormFillSessions/CreateExternalFormFillSession",
-                  "PathName": "Forms::CreateExternalFormFillSession"
+                  "Path": "https://developers.docusign.com/docs/rooms-api/reference/Forms/ExternalFormFillSessions/CreateExternalFormFillSession",
+                  "PathName": "ExternalFormFillSessions::CreateExternalFormFillSession"
                 }
               ],
               "RedirectsToOtherCodeExamples": [
                 {
                   "CodeExampleToRedirectTo": 4,
-                  "RedirectText": "<p>Problem: selected rooms does not has any documents. Please first add form to a room using <a {0}>example 4.</a> <br />Thank you.</p>"
+                  "RedirectText": "<p>Problem: Selected room does not have any forms. Add a form to a room using <a {0}>example 4.</a> <br /></p>"
                 },
                 {
                   "CodeExampleToRedirectTo": 1,
-                  "RedirectText": "<p>Problem: please first create a room using <a {0}>example 1.</a> <br />Thank you.</p>"
+                  "RedirectText": "<p>Problem: Create a room using <a {0}>example 1.</a> <br /></p>"
                 }
               ],
               "Forms": [
@@ -2181,17 +2148,17 @@
                   "Inputs": [
                     {
                       "InputName": "Rooms",
-                      "InputPlaceholder": "Please select a room"
+                      "InputPlaceholder": "Select a room"
                     }
                   ]
                 }
               ],
-              "ResultsPageText": "Results from the Forms::CreateExternalFormFillSession:"
+              "ResultsPageText": "Results from the ExternalFormFillSessions:CreateExternalFormFillSession:"
             },
             {
               "ExampleNumber": 7,
-              "ExampleName": "Creating a form group",
-              "ExampleDescription": "This example demonstrates creating a DocuSign Form Group.",
+              "ExampleName": "Create a form group",
+              "ExampleDescription": "Demonstrates how to create a form group for your Docusign Rooms for Real Estate account.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/rooms-api/how-to/create-form-group",
@@ -2213,7 +2180,7 @@
             {
               "ExampleNumber": 8,
               "ExampleName": "Grant office access to a form group",
-              "ExampleDescription": "This example demonstrates how to grant Office access to a Form Group.",
+              "ExampleDescription": "Demonstrates how to assign an office to a form group for your Docusign Rooms for Real Estate account.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/rooms-api/how-to/access-form-group",
@@ -2257,7 +2224,7 @@
             {
               "ExampleNumber": 9,
               "ExampleName": "Assign a form to a form group",
-              "ExampleDescription": "This example demonstrates how to assign a form to a form group.",
+              "ExampleDescription": "Demonstrates how to assign a form to a form group for your Docusign Rooms for Real Estate account.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/rooms-api/how-to/assign-form-group",
@@ -2284,7 +2251,7 @@
               "CustomErrorTexts": [
                 {
                   "ErrorMessageCheck": "Unhandled response type.",
-                  "ErrorMessage": "Response is empty and could not be cast to FormGroupFormToAssign. Please contact DocuSign support"
+                  "ErrorMessage": "Response is empty and could not be cast to FormGroupFormToAssign. Please contact Docusign support"
                 }
               ],
               "Forms": [
@@ -2325,31 +2292,6 @@
                 }
               ],
               "ResultsPageText": "Results from DataSet:getStream method:"
-            },
-            {
-              "ExampleNumber": 2,
-              "ExampleName": "Query monitoring data with filters",
-              "ExampleDescription": "<p>Demonstrates how to query an organization's data based on specified filters and aggregations.</p>",
-              "LinksToAPIMethod": [
-                {
-                  "Path": "https://developers.docusign.com/docs/monitor-api/reference/monitor/dataset/postwebquery/",
-                  "PathName": "DataSet:postWebQuery"
-                }
-              ],
-              "Forms": [
-                {
-                  "FormName": "<p>Please select start and end dates</p>",
-                  "Inputs": [
-                    {
-                      "InputName": "Start date"
-                    },
-                    {
-                      "InputName": "End date"
-                    }
-                  ]
-                }
-              ],
-              "ResultsPageText": "Results from DataSet:postWebQuery method:"
             }
           ]
         }
@@ -2412,7 +2354,7 @@
             {
               "ExampleNumber": 2,
               "ExampleName": "Create a new active user for CLM and eSignature",
-              "ExampleDescription": "Demonstrates how to create a new DocuSign user (valid for both CLM and eSignature APIs) and activate their account automatically.",
+              "ExampleDescription": "Demonstrates how to create a new Docusign user (valid for both CLM and eSignature APIs) and activate their account automatically.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getproductpermissionprofiles",
@@ -2429,7 +2371,7 @@
               ],
               "CustomErrorTexts": [
                 {
-                  "ErrorMessage": "You do not have any groups set in your DocuSign Admin. Please go to DocuSign Admin and create a group to use this code example."
+                  "ErrorMessage": "You do not have any groups set in your Docusign Admin. Please go to Docusign Admin and create a group to use this code example."
                 }
               ],
               "Forms": [
@@ -2458,7 +2400,7 @@
                       "InputName": "CLM Permission Profile"
                     },
                     {
-                      "InputName": "DocuSign Admin Group"
+                      "InputName": "Docusign Admin Group"
                     }
                   ]
                 }
@@ -2521,8 +2463,8 @@
             },
             {
               "ExampleNumber": 6,
-              "ExampleName": "Retrieve the user's DocuSign profile using an email address",
-              "ExampleDescription": "Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s email address.",
+              "ExampleName": "Retrieve the user's Docusign profile using an email address",
+              "ExampleDescription": "Demonstrates how to obtain the user’s Docusign profile information across all Docusign accounts by specifying the user’s email address.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
@@ -2543,8 +2485,8 @@
             },
             {
               "ExampleNumber": 7,
-              "ExampleName": "Retrieve the user's DocuSign profile using a User ID",
-              "ExampleDescription": "Demonstrates how to obtain the user’s DocuSign profile information across all DocuSign accounts by specifying the user’s User ID.",
+              "ExampleName": "Retrieve the user's Docusign profile using a User ID",
+              "ExampleDescription": "Demonstrates how to obtain the user’s Docusign profile information across all Docusign accounts by specifying the user’s User ID.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/esignusermanagement/getuserprofiles",
@@ -2601,7 +2543,7 @@
             {
               "ExampleNumber": 9,
               "ExampleName": "Delete user product permission profiles using an email address",
-              "ExampleDescription": "Demonstrates how to list and delete DocuSign Admin user product permission profiles.",
+              "ExampleDescription": "Demonstrates how to list and delete Docusign Admin user product permission profiles.",
               "LinksToAPIMethod": [
                 {
                   "Path": "https://developers.docusign.com/docs/admin-api/reference/usermanagement/multiproductusermanagement/getuserproductpermissionprofilesbyemail",
@@ -2678,47 +2620,255 @@
               ],
               "ResultsPageText": "Results from DataDeletion:redactIndividualUserData method:"
             },
-                        {
-                            "ExampleNumber": 12,
-                            "ExampleName": "Clone an account",
-                            "ExampleDescription": "Creates a new eSignature account in your organization by creating a copy of an existing account.",
-                            "LinksToAPIMethod": [
-                                {
-                                    "Path": "https://developers.docusign.com/docs/admin-api/reference/accountprovisioning/accountcloning/getassetgroupaccounts/",
-                                    "PathName": "AccountCloning::getAssetGroupAccounts"
-                                },
-                                {
-                                    "Path": "https://developers.docusign.com/docs/admin-api/reference/accountprovisioning/accountcloning/cloneassetgroupaccount/",
-                                    "PathName": "AccountCloning::cloneAssetGroupAccount"
-                                }
-                            ],
-                            "Forms": [
-                                {
-                                    "Inputs": [
-                                        {
-                                            "InputName": "Source account"
-                                        },
-                                        {
-                                            "InputName": "Target account name",
-                                            "InputPlaceholder": ""
-                                        },
-                                        {
-                                            "InputName": "Account admin first name",
-                                            "InputPlaceholder": "Pat"
-                                        },
-                                        {
-                                            "InputName": "Account admin last name",
-                                            "InputPlaceholder": "Johnson"
-                                        },
-                                        {
-                                            "InputName": "Account admin email",
-                                            "InputPlaceholder": "example@example.com"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "ResultsPageText": "Results from AccountCloning::cloneAssetGroupAccount method:"
-                        }
+            {
+              "ExampleNumber": 12,
+              "ExampleName": "Clone an account",
+              "ExampleDescription": "Creates a new eSignature account in your organization by creating a copy of an existing account.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/admin-api/reference/accountprovisioning/accountcloning/getassetgroupaccounts/",
+                  "PathName": "AccountCloning::getAssetGroupAccounts"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/admin-api/reference/accountprovisioning/accountcloning/cloneassetgroupaccount/",
+                  "PathName": "AccountCloning::cloneAssetGroupAccount"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Source account"
+                    },
+                    {
+                      "InputName": "Target account name",
+                      "InputPlaceholder": ""
+                    },
+                    {
+                      "InputName": "Account admin first name",
+                      "InputPlaceholder": "Pat"
+                    },
+                    {
+                      "InputName": "Account admin last name",
+                      "InputPlaceholder": "Johnson"
+                    },
+                    {
+                      "InputName": "Account admin email",
+                      "InputPlaceholder": "example@example.com"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "Results from AccountCloning::cloneAssetGroupAccount method:"
+            },
+            {
+              "ExampleNumber": 13,
+              "ExampleName": "Create an account",
+              "ExampleDescription": "Creates a new eSignature account in your organization.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/admin-api/reference/",
+                  "PathName": "ProvisionAssetGroup::getOrganizationPlanItems"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/admin-api/reference/",
+                  "PathName": "ProvisionAssetGroup::createAssetGroupAccount"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Account email",
+                      "InputPlaceholder": ""
+                    },
+                    {
+                      "InputName": "Account first name",
+                      "InputPlaceholder": "Pat"
+                    },
+                    {
+                      "InputName": "Account last name",
+                      "InputPlaceholder": "Johnson"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "Results from ProvisionAssetGroup::createAssetGroupAccount method:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Notary",
+      "Groups": [
+        {
+          "Name": "Notary examples",
+          "Examples": [
+            {
+              "ExampleNumber": 4,
+              "CFREnabled": "AllAccounts",
+              "ExampleName": "Send an envelope with third party notary",
+              "ExampleDescription": "The envelope includes a HTML document. Anchor text(<a target='_blank' href=\"https://developers.docusign.com/docs/esign-rest-api/esign101/concepts/tabs/auto-place/\">AutoPlace</a>) is used to position the signing fields in the documents.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes:create"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer Email",
+                      "InputPlaceholder": "pat@example.com"
+                    },
+                    {
+                      "InputName": "Signer Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "The envelope has been created and sent with third party Notary!<br />Envelope ID {0}."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "ConnectedFields",
+      "Groups": [
+        {
+          "Name": "Connected Fields",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "ExampleName": "Set connected fields",
+              "ExampleDescription": "Demonstrates how to use an extension app to verify the fields in the document.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/create/",
+                  "PathName": "Envelopes:create"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer Email",
+                      "InputPlaceholder": "pat@example.com"
+                    },
+                    {
+                      "InputName": "Signer Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "Extension app for verification"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}.!<br />When signing the envelope, ensure the connection to your data verification extension app is active.",
+              "AdditionalPage": [
+                {
+                  "Name": "no_verification_app",
+                  "ResultsPageText": "No data verification were found in the account. Please install a data verification app.<br />You can install a phone number verification extension app by copying the following link to your browser: <a href=\"https://apps.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04\">https://apps.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04</a>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Navigator",
+      "Groups": [
+        {
+          "Name": "Navigator",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "ExampleName": "List agreements",
+              "ExampleDescription": "Demonstrates how to get a list of agreements with the Navigator API",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/navigator-api/reference/navigator/agreements/getagreementslist/",
+                  "PathName": "Agreements:getAgreementsList"
+                }
+              ],
+              "ResultsPageText": "List of agreements with the Navigator API:"
+            },
+            {
+              "ExampleNumber": 2,
+              "ExampleName": "Get single agreement",
+              "ExampleDescription": "Demonstrates how to get a specific agreement with the Navigator API",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/navigator-api/reference/navigator/agreements/getagreement/",
+                  "PathName": "Agreements:getAgreement"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Please select an agreement:"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "Details for selected agreement:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Maestro",
+      "Groups": [
+        {
+          "Name": "Maestro",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "ExampleName": "How to trigger a Maestro workflow",
+              "ExampleDescription": "Trigger a workflow",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/maestro-api/reference/maestro/workflows/triggerworkflow/",
+                  "PathName": "Workflows:TriggerWorkflow"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Instance name"
+                    },
+                    {
+                      "InputName": "Signer email"
+                    },
+                    {
+                      "InputName": "Signer name"
+                    },
+                    {
+                      "InputName": "CC email"
+                    },
+                    {
+                      "InputName": "CC name"
+                    }
+                  ]
+                }
+              ],
+              "CustomErrorTexts": [
+                {
+                  "ErrorMessageCheck": "NO_ACTIVE_WORKFLOW_FOUND",
+                  "ErrorMessage": "<p>Problem: No active workflow found. Please create a new workflow and publish it on your <a href=\"https://apps-d.docusign.com/\">DocuSign account page</a></p>"
+                }
+              ],
+              "ResultsPageText": "Workflow instance is created. Please sign the document."
+            }
           ]
         }
       ]
