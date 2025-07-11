@@ -2781,7 +2781,7 @@
                   "ErrorMessageCheck": "NO_DATA_VERIFICATION_EXTENSIONS",
                   "ErrorMessage": "<p>No data verification extension apps were found in the account. Please install a <a href=\"https://apps-d.docusign.com/app-center/app/d16f398f-8b9a-4f94-b37c-af6f9c910c04\">phone number verification app from the App Center</a>.</p>"
                 }
-              ],
+              ]
             }
           ]
         }
