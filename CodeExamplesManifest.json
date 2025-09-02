@@ -1928,6 +1928,32 @@
                   "ResultsPageText": "The webform has been embedded below using the Docusign JS library."
                 }
               ]
+            },
+            {
+              "ExampleNumber": 2,
+              "ExampleName": "Create and send an instance of a web form",
+              "ExampleDescription": "Creates an instance of a web form and sends it to a recipient by email.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "",
+                  "PathName": "WebForms:ListWebForms"
+                },
+                {
+                  "Path": "",
+                  "PathName": "WebForms:CreateInstance"
+                }
+              ],
+              "AdditionalPage": [
+                {
+                  "Name": "view_source_file",
+                  "ResultsPageText": "View source file remoteInstance.js on GitHub."
+                },
+                {
+                  "Name": "create_web_form",
+                  "ResultsPageText": "Go to your Docusign account to create the Web Form. Go to 'Templates' in your developer account, select 'Start,' select 'Web Forms,' and choose 'Upload Web Form.' Upload the JSON config file 'web-form-config.json' found under the demo_documents folder of this project. You will need to activate the web form before proceeding. Press the enter key after doing so."
+                }
+              ],
+               "ResultsPageText": "The envelope has been created and sent!<br/> Envelope ID {0}.<br/> Instance ID: {1}."
             }
           ]
         }
