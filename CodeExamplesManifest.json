@@ -39,7 +39,11 @@
       "AGREED": "AGREED",
       "SaveAgentActivationCode": "Save this code. You'll need it when activating the new agent.",
       "EmailAddressOfUserToDelete": "The email address of the user whose data will be deleted. Note that this email address should be associated with a user that has been closed for 24 hours.",
-      "UserIDOfUserToDelete": "The user ID of the user whose data will be deleted. Note that this ID should be associated with a user that has been closed for 24 hours."
+      "UserIDOfUserToDelete": "The user ID of the user whose data will be deleted. Note that this ID should be associated with a user that has been closed for 24 hours.",
+      "SubmitButtonDeleteText": "Delete",
+      "SubmitButtonRestoreText": "Restore",
+      "DefaultEnvelopeId": "If example 2 was executed, the envelope ID saved after it will be used by default. Alternatively, a different ID can be specified.",
+      "EnvelopeWillBeRestored": "Envelope {0} will be restored."
     }
   },
   "APIs": [
@@ -710,7 +714,7 @@
               "AdditionalPage": [
                 {
                   "Name": "envelope_is_deleted",
-                  "ResultsPageText": "Envelope is deleted and available in the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view=deleted\">Deleted</a> folder."
+                  "ResultsPageText": "Envelope is deleted and available in the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view=deleted\">Deleted</a> folder.<br/>To restore the Envelope, press Continue and follow instructions"
                 }
               ]
             }
