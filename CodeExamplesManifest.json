@@ -709,7 +709,7 @@
                     },
                     {
                       "InputName": "Name of the folder to undelete the envelope to (e.g., 'Sent Items')",
-                      "InputPlaceholder": "Sent Item"
+                      "InputPlaceholder": "Sent Items"
                     }
                   ]
                 }
