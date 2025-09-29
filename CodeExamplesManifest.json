@@ -714,11 +714,15 @@
                   ]
                 }
               ],
-              "ResultsPageText": "Envelope is restored to the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view=sent\">Sent</a> folder",
+              "ResultsPageText": "Envelope is restored to the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view={0}\">{1}</a> folder",
               "AdditionalPage": [
                 {
                   "Name": "envelope_is_deleted",
                   "ResultsPageText": "Envelope is deleted and available in the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view=deleted\">Deleted</a> folder.<br/>To restore the Envelope, press Continue and follow instructions"
+                },
+                {
+                  "Name": "folder_does_not_exist",
+                  "ResultsPageText": "The entered folder is not present, please try changing the folder name."
                 }
               ]
             }
