@@ -692,7 +692,7 @@
               "ExampleNumber": 45,
               "CFREnabled": "NonCFR",
               "ExampleName": "Delete and Restore an Envelope",
-              "ExampleDescription": "Moves an Envelope to a recycling bin. Then restores it by moving it to the Sent folder.",
+              "ExampleDescription": "Moves an Envelope to a recycle bin. Then restores it by moving it to the Sent folder.",
               "Notes": "<b>Note:</b> To know your envelope ID, see <a target='_blank' href=\"https://support.docusign.com/s/articles/Where-do-I-find-my-envelope-ID\">Locate a Docusign envelope ID</a>.",
               "LinksToAPIMethod": [
                 {
@@ -706,6 +706,10 @@
                     {
                       "InputName": "Envelope ID",
                       "InputPlaceholder": "12345678-1234-1234-1234-123456789012"
+                    },
+                    {
+                      "InputName": "Name of the folder to undelete the envelope to (e.g., 'Sent Items')",
+                      "InputPlaceholder": "Sent Item"
                     }
                   ]
                 }
