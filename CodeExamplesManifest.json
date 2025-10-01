@@ -714,15 +714,15 @@
                   ]
                 }
               ],
-              "ResultsPageText": "Envelope with ID '{0}' is undeleted to the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view={1}\">{2}</a> folder",
+              "ResultsPageText": "Envelope with ID \"{0}\" is undeleted to the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view={1}\">{2}</a> folder",
               "AdditionalPage": [
                 {
                   "Name": "envelope_is_deleted",
-                  "ResultsPageText": "Envelope with ID '{0}' is deleted and available in the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view=deleted\">Deleted</a> folder.<br/>To undelete the Envelope, press Continue and follow instructions"
+                  "ResultsPageText": "Envelope with ID \"{0}\" is deleted and available in the <a target='_blank' href=\"https://apps-d.docusign.com/send/documents?view=deleted\">Deleted</a> folder.<br/>To undelete the Envelope, press Continue and follow instructions"
                 },
                 {
                   "Name": "folder_does_not_exist",
-                  "ResultsPageText": "ERROR: Could not find a folder with the name '{0}'. Please check the spelling."
+                  "ResultsPageText": "ERROR: Could not find a folder with the name \"{0}\". Please check the spelling."
                 }
               ]
             }
