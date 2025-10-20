@@ -3025,6 +3025,89 @@
           ]
         }
       ]
+    },
+    {
+      "Name": "Workspaces",
+      "Groups": [
+        {
+          "Name": "Workspaces",
+          "Examples": [
+            {
+              "ExampleNumber": 1,
+              "ExampleName": "Create a workspace",
+              "ExampleDescription": "Creates a workspace",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/workspaces-api/reference/workspaces/workspaces/createworkspace/",
+                  "PathName": "Workspaces:createWorkspace"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Workspace name"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "Workspace created. ID: {0}"
+            },
+            {
+              "ExampleNumber": 2,
+              "ExampleName": "Add a document to a Workspace",
+              "ExampleDescription": "Adds a document to a Workspace",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/workspaces-api/reference/workspaces/workspacedocuments/addworkspacedocument/",
+                  "PathName": "WorkspaceDocuments:addWorkspaceDocument"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Document name"
+                    },
+                    {
+                      "InputName": "Document path"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "Document added! ID: {0}"
+            },
+            {
+              "ExampleNumber": 3,
+              "ExampleName": "Send a Workspace Envelope with Recipient Info",
+              "ExampleDescription": "Sends a Workspace Envelope with Recipient Info",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/workspaces-api/reference/workspaces/workspaces/createworkspaceenvelope/",
+                  "PathName": "Workspaces:createWorkspaceEnvelope"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
+                  "PathName": "Envelopes:update"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "Signer email"
+                    },
+                    {
+                      "InputName": "Signer name"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "The workspace envelope has been created and sent!<br />Envelope ID {0}."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
