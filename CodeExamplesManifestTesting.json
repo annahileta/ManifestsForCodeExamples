@@ -45,6 +45,7 @@
   "APIs": [
     {
       "Name": "eSignature",
+      "ExampleNumber": 2,
       "Groups": [
         {
           "Name": "Sending a signature request (remote signing)",
