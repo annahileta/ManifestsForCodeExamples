@@ -3063,6 +3063,12 @@
                   "PathName": "WorkspaceDocuments:addWorkspaceDocument"
                 }
               ],
+              "RedirectsToOtherCodeExamples": [
+                {
+                  "CodeExampleToRedirectTo": 1,
+                  "RedirectText": "<p>Prerequisite: Please create a workspace before running this example using <a {0}>Create a workspace</a>.</p>"
+                }
+              ],
               "Forms": [
                 {
                   "Inputs": [
@@ -3089,6 +3095,16 @@
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/update/",
                   "PathName": "Envelopes:update"
+                }
+              ],
+              "RedirectsToOtherCodeExamples": [
+                {
+                  "CodeExampleToRedirectTo": 1,
+                  "RedirectText": "<p>Prerequisite: Please create a workspace before running this example using <a {0}>Create a workspace</a>.</p>"
+                },
+                {
+                  "CodeExampleToRedirectTo": 2,
+                  "RedirectText": "<p>Prerequisite: Please create a document in the workspace before running this example using <a {0}>Add a document to a Workspace</a>.</p>"
                 }
               ],
               "Forms": [
