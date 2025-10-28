@@ -43,7 +43,9 @@
       "SubmitButtonDeleteText": "Delete",
       "SubmitButtonRestoreText": "Restore",
       "DefaultEnvelopeId": "If example 2 was executed, the envelope ID saved after it will be used by default. Alternatively, a different ID can be specified.",
-      "EnvelopeWillBeRestored": "Envelope {0} will be restored."
+      "EnvelopeWillBeRestored": "Envelope {0} will be restored.",
+      "SpecifyNameWithExtension": "Note: Specify the document name with .pdf extension",
+      "SelectPDFFileFromFolder": "Note: Select a PDF file from the following folder {0}"
     }
   },
   "APIs": [
