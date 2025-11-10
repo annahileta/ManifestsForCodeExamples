@@ -2981,6 +2981,10 @@
                 {
                   "ErrorMessageCheck": "NO_WORKFLOW_ID_FOUND",
                   "ErrorMessage": "Unable to retrieve workflow instance: {0}."
+                },
+                {
+                  "ErrorMessageCheck": "NO_WORKFLOW_INSTANCE_COMPLETED",
+                  "ErrorMessage": "The workflow instance has been completed and can no longer be canceled. Please trigger the workflow instance again, but stop before completing the signing process, then try running it once more."
                 }
               ],
               "ResultsPageText": "Workflow has been canceled.",
