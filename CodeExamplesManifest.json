@@ -313,7 +313,7 @@
           "CustomErrorTexts": [
             {
               "ErrorMessageCheck": "ACCOUNT_LACKS_PERMISSIONS",
-              "ErrorMessage": "This Account lacks sufficient permissions. Account lacks permission to send Envelopes over SMS.<br />Please contact <a href=\"https://developers.docusign.com/support\">Support</a> to enable multi-channel delivery in your account."
+              "ErrorMessage": "ACCOUNT_LACKS_PERMISSIONS: This Account lacks sufficient permissions. Account lacks permission to send Envelopes over SMS.<br />Please contact <a href=\"https://developers.docusign.com/support\">Support</a> to enable multi-channel delivery in your account."
             }
           ],
           "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
