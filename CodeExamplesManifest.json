@@ -251,10 +251,8 @@
                 }
               ],
               "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
-            }
-          ]
-        },
-        {
+            },
+            {
           "ExampleNumber": 46,
           "CFREnabled": "NonCFR",
           "ExampleName": "Request a signature by multiple delivery channels",
@@ -319,6 +317,8 @@
             }
           ],
           "ResultsPageText": "The envelope has been created and sent!<br />Envelope ID {0}."
+        }
+          ]
         },
         {
           "Name": "Hosting the signing experience (embedded signing)",
