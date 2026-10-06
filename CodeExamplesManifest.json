@@ -1634,6 +1634,69 @@
                 }
               ],
               "SkipForLanguages": "java"
+            },
+                        {
+              "ExampleNumber": 47,
+              "CFREnabled": "AllAccounts",
+              "ExampleName": "Share access to a Docusign envelope",
+              "ExampleDescription": "Share an envelope with an agent user and view the principal user's envelopes using the Shared Access view in the Docusign UI.",
+              "LinksToAPIMethod": [
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/users/users/create/",
+                  "PathName": "Users:create"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/",
+                  "PathName": "Envelopes:shares"
+                },
+                {
+                  "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/liststatus/",
+                  "PathName": "Envelopes:listStatus"
+                }
+              ],
+              "RedirectsToOtherCodeExamples": [
+                {
+                  "CodeExampleToRedirectTo": 2,
+                  "RedirectText": "<p>Problem: please first create an envelope using <a {0}>Send an envelope with a remote (email) signer and cc recipient.</a> <br />Thank you.</p>"
+                }
+              ],
+              "Forms": [
+                {
+                  "Inputs": [
+                    {
+                      "InputName": "New Agent Email",
+                      "InputPlaceholder": "pat@example.com"
+                    },
+                    {
+                      "InputName": "New Agent Name",
+                      "InputPlaceholder": "Pat Johnson"
+                    },
+                    {
+                      "InputName": "Activation Code",
+                      "InputPlaceholder": "123"
+                    }
+                  ]
+                }
+              ],
+              "ResultsPageText": "Agent has been created. Please go to the agent's email to activate the agent.",
+              "AdditionalPage": [
+                {
+                  "Name": "authenticate_as_agent",
+                  "ResultsPageText": "The envelope has been shared with the agent. Please go to the principal's developer account at <a target='_blank' href=\"https://admindemo.docusign.com\">admindemo.docusign.com</a> and log out, then come back to this page and press continue. You will be redirected to the log in page where you should authenticate as the agent user that you just created."
+                },
+                {
+                  "Name": "list_status_successful",
+                  "ResultsPageText": "<p>Go to the <a href=\"https://appdemo.docusign.com/documents\">Manage</a> tab in the agent's Docusign developer account, select shared access in the upper left, then select the principal's account to view the shared envelope. For details, see <a target='_blank' href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/shared-access/\">How to share access to a Docusign inbox</a>.</p><p>Results from Envelopes:listStatus method:</p>"
+                },
+                {
+                  "Name": "list_status_unsuccessful",
+                  "ResultsPageText": "The principal user's account does not have any envelopes in it. Please log out of the launcher and log in as a principal user and create an envelope."
+                },
+                {
+                  "Name": "user_not_found",
+                  "ResultsPageText": "User has not been activated. Please go to the agent's email to activate the agent."
+                }
+              ]
             }
           ]
         },
