@@ -1635,7 +1635,7 @@
               ],
               "SkipForLanguages": "java"
             },
-                        {
+            {
               "ExampleNumber": 47,
               "CFREnabled": "AllAccounts",
               "ExampleName": "Share access to a Docusign envelope",
@@ -1651,7 +1651,7 @@
                 },
                 {
                   "Path": "https://developers.docusign.com/docs/esign-rest-api/reference/envelopes/envelopes/liststatus/",
-                  "PathName": "Envelopes:listStatus"
+                  "PathName": "Envelopes:getSharedEnvelopes"
                 }
               ],
               "RedirectsToOtherCodeExamples": [
@@ -1686,11 +1686,11 @@
                 },
                 {
                   "Name": "list_status_successful",
-                  "ResultsPageText": "<p>Go to the <a href=\"https://appdemo.docusign.com/documents\">Manage</a> tab in the agent's Docusign developer account, select shared access in the upper left, then select the principal's account to view the shared envelope. For details, see <a target='_blank' href=\"https://developers.docusign.com/docs/esign-rest-api/how-to/shared-access/\">How to share access to a Docusign inbox</a>.</p><p>Results from Envelopes:listStatus method:</p>"
+                  "ResultsPageText": "<p>Results from Envelopes:getSharedEnvelopes method:</p>"
                 },
                 {
                   "Name": "list_status_unsuccessful",
-                  "ResultsPageText": "The principal user's account does not have any envelopes in it. Please log out of the launcher and log in as a principal user and create an envelope."
+                  "ResultsPageText": "No envelopes have been shared with the agent. Please log out of the launcher, log in as the principal user and run this example again."
                 },
                 {
                   "Name": "user_not_found",
