@@ -1695,6 +1695,10 @@
                 {
                   "Name": "user_not_found",
                   "ResultsPageText": "User has not been activated. Please go to the agent's email to activate the agent."
+                },
+                {
+                  "Name": "existing_user_found",
+                  "ResultsPageText": "An active user with this email already exists in the account, so no new user was created. This existing user will be used as the agent."
                 }
               ]
             }
